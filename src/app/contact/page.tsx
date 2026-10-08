@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { businessFacts } from "@/data/business";
-import { faqs } from "@/data/faqs";
 import PageHero from "@/components/ui/PageHero";
-import FAQAccordion from "@/components/ui/FAQAccordion";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
@@ -11,24 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
-  return (
-    <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact AM Masons Advisory",
+          "description": "Get in touch with AM Masons Advisory"
+        }) }}
       />
       
       <PageHero 
@@ -121,22 +109,6 @@ export default function Contact() {
               </div>
             </div>
             
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 md:py-28 bg-gray-50 border-t border-gray-200">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Common questions about our independent advisory approach and how we work with clients.
-            </p>
-          </div>
-          
-          <div className="slide-up" style={{ animationDelay: '0.1s' }}>
-            <FAQAccordion faqs={faqs} />
           </div>
         </div>
       </section>

@@ -104,11 +104,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* When Do We Get Involved */}
+      {/* We Get Involved */}
       <section className="py-20 md:py-28 bg-transparent">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 slide-up">
-            <h2 className="section-header mb-6">When Do We Get Involved</h2>
+            <h2 className="section-header mb-6">We Get Involved</h2>
             <p className="subtitle">
               There are seven situations that signal it&apos;s time for an independent view. Not sure what you need? That&apos;s usually where we start.
             </p>

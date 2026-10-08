@@ -46,9 +46,9 @@ export default function RootDynamicPage({ params }: Props) {
   if (situation) {
     return (
       <>
-        <PageHero 
-          title={situation.title} 
-          subtitle="When Do We Get Involved"
+        <PageHero
+          eyebrow="We get involved..."
+          title={situation.title}
         />
 
         <section className="py-20 md:py-28 bg-white">

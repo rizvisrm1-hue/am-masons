@@ -5,18 +5,21 @@ import PageHero from "@/components/ui/PageHero";
 import CTASection from "@/components/ui/CTASection";
 import { situationContent } from "@/data/situationContent";
 import SituationDetail from "@/components/situations/SituationDetail";
+import { getMarkdownHtml } from "@/lib/markdown";
 
 type Props = {
   params: { slug: string };
 };
 
-const legalPages = [
-  "terms-and-conditions",
-  "legal-notice",
-  "disclaimer",
-  "ai-use-policy",
-  "privacy-policy"
-];
+// Legal pages: content ported from old.am-masons.com, in src/content/legal/<slug>.md
+const legalTitles: Record<string, string> = {
+  "terms-and-conditions": "Terms and Conditions",
+  "legal-notice": "Legal Notice",
+  "disclaimer": "Disclaimer",
+  "ai-use-policy": "AI Use Policy",
+  "privacy-policy": "Privacy Policy",
+};
+const legalPages = Object.keys(legalTitles);
 
 export function generateStaticParams() {
   const situationParams = situations.map((s) => ({ slug: s.slug }));
@@ -35,8 +38,7 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 
   if (legalPages.includes(params.slug)) {
-    const title = params.slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-    return { title: `${title} | AM Masons Advisory` };
+    return { title: `${legalTitles[params.slug]} | AM Masons Advisory` };
   }
   
   return { title: "Not Found" };
@@ -63,53 +65,25 @@ export default function RootDynamicPage({ params }: Props) {
   if (situation) {
     return (
       <>
-        <PageHero
-          eyebrow="We get involved..."
-          title={situation.title}
-        />
-
-        <section className="py-20 md:py-28 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <div className="mb-12 slide-up">
-              <h2 className="text-2xl font-bold text-navy-900 mb-4">The Situation</h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                {situation.gist}
-              </p>
-            </div>
-
-            <div className="mt-12 slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="prose max-w-none text-gray-600">
-                <p>
-                  [Placeholder content for this specific situation. Owner to supply full text.]
-                </p>
-                <p>
-                  When facing this scenario, organizations often struggle with conflicting internal priorities or a lack of objective data. An independent advisory perspective helps you clarify the underlying issues, define the right strategy, and move forward with confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <PageHero eyebrow="We get involved..." title={situation.title} subtitle={situation.gist} />
         <CTASection />
       </>
     );
   }
 
   if (legalPages.includes(params.slug)) {
-    const title = params.slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+    const html = getMarkdownHtml("legal", params.slug);
     return (
       <>
-        <PageHero title={title} />
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <div className="bg-gray-50 p-8 border border-dashed border-gray-300 rounded-lg text-center slide-up">
-              <h2 className="text-xl font-bold text-gray-700 mb-4">Legal Document Placeholder</h2>
-              <p className="text-gray-600">
-                This is a placeholder for the {title}. 
-                <br /><br />
-                <strong>Note to owner:</strong> The final legal text must be supplied by you or your legal counsel.
-              </p>
-            </div>
+        <PageHero title={legalTitles[params.slug]} />
+        <section className="py-20 md:py-28 bg-white">
+          <div className="container mx-auto px-4 max-w-3xl">
+            {html ? (
+              <div
+                className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-gray-900"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            ) : null}
           </div>
         </section>
       </>

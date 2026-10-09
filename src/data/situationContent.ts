@@ -1,6 +1,7 @@
 export type SituationContent = {
   intro: string;
   whenToEngage: {
+    eyebrow?: string;
     heading: string;
     text: string;
     signals: string[];
@@ -13,8 +14,18 @@ export type SituationContent = {
     heading: string;
     items: { title: string; text: string }[];
   };
-  independence: string;
-  related: { title: string; text: string; href: string }[];
+  // Optional single-scope section ("What is included"), used by some offerings.
+  included?: {
+    eyebrow: string;
+    heading: string;
+    label?: string;
+    name?: string;
+    intro: string;
+    items: string[];
+    note?: string;
+  };
+  independence?: string;
+  related?: { title: string; text: string; href: string }[];
   cta: { title: string; text: string };
 };
 

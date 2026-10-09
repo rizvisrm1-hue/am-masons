@@ -11,7 +11,7 @@ function Eyebrow({ children }: { children: string }) {
 }
 
 export default function SituationDetail({ content }: { content: SituationContent }) {
-  const { whenToEngage, outcomes, steps, independence, related, cta } = content;
+  const { whenToEngage, outcomes, steps, included, independence, related, cta } = content;
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function SituationDetail({ content }: { content: SituationContent
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-12 lg:gap-20">
           <div className="slide-up">
-            <Eyebrow>When to engage</Eyebrow>
+            <Eyebrow>{whenToEngage.eyebrow ?? "When to engage"}</Eyebrow>
             <h2 className="section-header mb-6">{whenToEngage.heading}</h2>
             <p className="subtitle">{whenToEngage.text}</p>
           </div>
@@ -85,7 +85,44 @@ export default function SituationDetail({ content }: { content: SituationContent
         </div>
       </section>
 
+      {/* What is included (single scope) */}
+      {included && (
+        <section className="py-20 md:py-28 bg-transparent">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="max-w-3xl mb-12 slide-up">
+              <Eyebrow>{included.eyebrow}</Eyebrow>
+              <h2 className="section-header">{included.heading}</h2>
+            </div>
+            <div className="p-7 md:p-10 rounded-2xl bg-card border border-primary shadow-card-hover">
+              {included.label && (
+                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-primary mb-1">
+                  {included.label}
+                </p>
+              )}
+              {included.name && (
+                <h3 className="text-[22px] font-bold text-gray-900 mb-3">{included.name}</h3>
+              )}
+              <p className="text-gray-600 leading-relaxed mb-6 max-w-3xl">{included.intro}</p>
+              <ul className="grid md:grid-cols-2 gap-x-10 gap-y-3 mb-2">
+                {included.items.map((item) => (
+                  <li key={item} className="flex gap-3 text-gray-700">
+                    <svg className="w-5 h-5 shrink-0 text-primary mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              {included.note && (
+                <p className="mt-6 pt-5 border-t border-gray-100 text-[15px] text-gray-500 max-w-4xl">{included.note}</p>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Independence */}
+      {independence && (
       <section className="py-16 md:py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-gray-400 mb-4">
@@ -94,8 +131,10 @@ export default function SituationDetail({ content }: { content: SituationContent
           <p className="text-[20px] md:text-[24px] leading-relaxed text-gray-100">{independence}</p>
         </div>
       </section>
+      )}
 
       {/* Related */}
+      {related && related.length > 0 && (
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="max-w-3xl mb-12">
@@ -118,6 +157,7 @@ export default function SituationDetail({ content }: { content: SituationContent
           </div>
         </div>
       </section>
+      )}
 
       <CTASection title={cta.title} text={cta.text} buttonText="Start a Conversation" buttonHref="/start-a-conversation" />
     </>

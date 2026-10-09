@@ -23,23 +23,25 @@ export default function OfferingCard({ offering }: { offering: Offering }) {
         <h3 className="text-[18px] md:text-[20px] font-semibold text-gray-900 leading-[1.35] mb-4 group-hover:text-primary transition-colors">
           {offering.title}
         </h3>
-        <p className="text-gray-600 mb-6 flex-grow body-copy">
+        <p className="text-gray-600 mb-6 body-copy whitespace-pre-line">
           {offering.description}
         </p>
         
-        <div className="mb-8 bg-surface/50 p-4 rounded-xl border border-primary-light/50">
-          <h4 className="text-[14px] font-semibold text-gray-900 mb-3">Typical Triggers:</h4>
+        <div className="mb-4 bg-surface/50 p-4 rounded-xl border border-primary-light/50">
+          <h4 className="text-[14px] font-semibold text-gray-900 mb-3">Typical Triggers</h4>
           <ul className="text-[14px] text-gray-600 list-none space-y-2">
-            {offering.triggers.slice(0, 2).map((trigger, i) => (
+            {offering.triggers.map((trigger, i) => (
               <li key={i} className="flex items-start">
                 <span className="text-primary mr-2 mt-[2px]">•</span>
                 <span className="leading-snug">{trigger}</span>
               </li>
             ))}
-            {offering.triggers.length > 2 && (
-              <li className="text-gray-400 italic text-[13px] pt-1">...and more</li>
-            )}
           </ul>
+        </div>
+
+        <div className="mb-8 flex-grow">
+          <h4 className="text-[14px] font-semibold text-gray-900 mb-2">Outcome</h4>
+          <p className="!text-[14px] text-gray-600 leading-snug">{offering.outcome}</p>
         </div>
         
         <Link 

@@ -16,14 +16,14 @@ export const offerings: Offering[] = [
     title: "Space Effectiveness Audit",
     slug: "space-effectiveness-audit",
     image: "/images/offerings/space-effectiveness-audit-empty-office.jpg",
-    description: "Tests whether the office works as hard as its lease, by measuring actual use and design fit before a decision locks in.",
+    description: "Find out whether your office is working as hard as the lease you signed for it. This engagement measures how your space is actually used and whether its design fits how your teams work, before a lease or budget decision locks the answer in.",
     triggers: [
-      "Floors half-empty most days",
-      "No focus/collab space on anchor days",
-      "Lease event 18-36 months out",
-      "Attendance policy changed but floor plan didn't"
+      "Floors sit half empty on most days",
+      "No room to focus or collaborate on anchor days",
+      "A lease event 18 to 36 months out",
+      "Attendance policy changed, floor plan did not",
     ],
-    outcome: "True utilization picture, functional-fit assessment, ranked next moves"
+    outcome: "A true utilization picture, a functional fit assessment, and a ranked set of next moves."
   },
   {
     id: "workplace-direction-alignment",
@@ -31,14 +31,14 @@ export const offerings: Offering[] = [
     title: "Workplace Direction & Alignment",
     slug: "workplace-direction-alignment",
     image: "/images/offerings/work-floor.jpg",
-    description: "Aligns leadership intent and trade-offs before committing to workplace/real estate/policy decisions, preventing rework.",
+    description: "Establish leadership clarity before committing to workplace, real estate, or policy decisions. This engagement aligns leadership intent, defines key trade-offs, and produces clear directional guidance that prevents costly rework later in the process.",
     triggers: [
-      "Lease renewal/relocation",
-      "Hybrid model change",
-      "Restructuring",
-      "Early redesign talks"
+      "Lease renewal or relocation decisions",
+      "Hybrid or working model changes",
+      "Organizational restructuring",
+      "Early-stage workplace redesign discussions",
     ],
-    outcome: "Clear direction and documented leadership decisions"
+    outcome: "Clear direction and documented leadership decisions that guide workplace strategy."
   },
   {
     id: "workplace-blueprint",
@@ -46,14 +46,14 @@ export const offerings: Offering[] = [
     title: "Workplace Blueprint",
     slug: "workplace-blueprint",
     image: "/images/offerings/full-kitchen.jpg",
-    description: "Turns leadership direction into an executable brief for designers and project teams.",
+    description: "Translate leadership direction into an executable workplace plan. This engagement helps organizations make practical decisions around space priorities, employee experience, and design intent.\n\nThe result is a clear workplace brief that designers and project teams can execute efficiently and consistently.",
     triggers: [
-      "Redesign/expansion",
-      "Relocation planning",
-      "Designers needing clearer direction",
-      "Conflicting stakeholders"
+      "Workplace redesign or expansion",
+      "Office relocation planning",
+      "Design teams requiring clearer direction",
+      "Conflicting stakeholder expectations",
     ],
-    outcome: "Aligned workplace brief + decision framework"
+    outcome: "An aligned workplace brief and structured decision framework for implementation."
   },
   {
     id: "operating-standards-governance-frameworks",
@@ -61,14 +61,14 @@ export const offerings: Offering[] = [
     title: "Operating Standards & Governance",
     slug: "operating-standards-governance-frameworks",
     image: "/images/offerings/conf-room.jpg",
-    description: "Defines day-to-day service standards, governance cadence, and accountability across locations.",
+    description: "Define how workplace services operate on a day-to-day basis. This engagement establishes service standards, governance cadence, and accountability structures that sustain performance across locations and teams.",
     triggers: [
-      "Inconsistent experience across sites",
-      "No ownership",
-      "Vendor variability",
-      "Multi-site growth"
+      "Inconsistent workplace experience across sites",
+      "Lack of ownership or accountability",
+      "Vendor performance variability",
+      "Organizational growth across multiple locations",
     ],
-    outcome: "Service standards, governance frameworks, consistency"
+    outcome: "Clear service standards, governance frameworks, and operational consistency."
   },
   {
     id: "fractional-head",
@@ -76,13 +76,13 @@ export const offerings: Offering[] = [
     title: "Fractional Head of Real Estate & Workplace Services",
     slug: "fractional-head-of-real-estate-workplace-services-2",
     image: "/images/offerings/full-kitchen.jpg",
-    description: "Provides senior workplace leadership and oversight part-time, without a full-time executive.",
+    description: "Provide senior workplace leadership and governance without the need for a full-time executive role. This engagement supports organizations requiring ongoing oversight, structured decision-making, and operational stability.",
     triggers: [
-      "Growing org without senior workplace lead",
-      "Major transition/consolidation",
-      "Need independent oversight"
+      "Growing organizations without senior workplace leadership",
+      "Major workplace transitions or consolidations",
+      "Need for independent oversight and guidance",
     ],
-    outcome: "Stable governance and informed decisions"
+    outcome: "Stable governance structures and informed workplace decision-making."
   },
   {
     id: "physical-security",
@@ -90,14 +90,14 @@ export const offerings: Offering[] = [
     title: "Physical Security Strategy & Assurance",
     slug: "physical-security-strategy-assurance",
     image: "/images/offerings/gallery-1.jpg",
-    description: "Independent advice on security governance, standards, and design intent, aligned to risk posture and workplace experience.",
+    description: "Physical security requirements frequently evolve alongside workplace change. AM Masons Advisory provides independent advisory on security governance, standards, and design intent, ensuring security measures align with organizational risk posture while still supporting workplace experience.\n\nThis capability may be delivered as a standalone engagement or integrated into Workplace & Real Estate: Workplace Blueprint and Operating Standards workstreams.",
     triggers: [
-      "Access control/cameras/incident response not independently reviewed in years",
-      "Governance gap (lapse, near-miss, audit finding)",
-      "Standards vary by site",
-      "Incumbent vendor made all decisions"
+      "Access control, cameras, or incident response haven’t been reviewed independently in years",
+      "A governance gap surfaced, a lapse, a near-miss, an audit finding",
+      "Standards vary site to site with no consistent ownership",
+      "Security decisions have been made entirely by the incumbent vendor",
     ],
-    outcome: "Clear security governance, defined standards, vendor-neutral direction"
+    outcome: "Clear security governance, defined standards, and vendor-neutral strategic direction."
   },
   {
     id: "enterprise-readiness",
@@ -105,28 +105,28 @@ export const offerings: Offering[] = [
     title: "Enterprise Readiness Advisory",
     slug: "enterprise-readiness-advisory",
     image: "/images/offerings/hero-bg-01.jpg",
-    description: "Insider intelligence for vendors/startups on how enterprises evaluate, select, and govern suppliers.",
+    description: "Prepare to sell into Fortune 500 organisations with strategic intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence. This engagement helps vendors and startups understand how enterprise organisations actually evaluate, select, and govern external providers, before they are in the room.",
     triggers: [
-      "First approach to a Fortune 500 prospect",
-      "Losing deals without knowing why",
-      "RFPs stalling at procurement",
-      "Entering CRE/workplace/FM/security market"
+      "Preparing for a first approach to a Fortune 500 or large enterprise prospect",
+      "Losing deals without understanding why",
+      "RFP responses that stall or fail at procurement",
+      "Entering the corporate real estate, workplace, FM, or physical security market for the first time",
     ],
-    outcome: "Written Enterprise Readiness Brief after three advisory sessions"
+    outcome: "A written Enterprise Readiness Brief with specific recommendations, delivered at the close of three structured advisory sessions. Flat fee. No success fees. No outcome dependency."
   },
   {
     id: "retail-space",
     group: "Retail Workplace & Real Estate",
-    title: "Space Effectiveness Audit (Retail)",
+    title: "Retail Space Effectiveness Audit",
     slug: "retail-space-effectiveness-audit",
     image: "/images/offerings/retail-space-effectiveness-store-interior.jpg",
-    description: "Reviews customer flow, back-of-house operations, and store technical infrastructure, independent of fixture, fit-out, or systems vendors.",
+    description: "Find out whether your stores work for the customer on the floor and the systems behind the walls. This engagement reviews customer flow, back-of-house operations, and the technical infrastructure every store depends on, independent of any fixture, fit-out, or systems vendor.",
     triggers: [
-      "New format/refit about to roll out",
-      "Similar stores performing very differently",
-      "Customers queuing/backtracking/leaving",
-      "Building systems vary by store"
+      "A new format or refit about to roll out",
+      "Similar stores delivering very different results",
+      "Customers queuing, backtracking, or leaving",
+      "Building systems that vary from store to store",
     ],
-    outcome: "Customer-experience read, technical effectiveness review, network next moves"
+    outcome: "A customer experience read, a technical effectiveness review, and clear next moves for the network."
   }
 ];

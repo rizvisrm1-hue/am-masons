@@ -11,7 +11,7 @@ export const businessFacts = {
   company: {
     email: "hello@am-masons.com",
     linkedin: "https://www.linkedin.com/company/am-masons-advisory",
-    bookingLink: "https://koalendar.com/e/meet-with-rashid-4",
+    bookingLink: "https://koalendar.com/e/meet-with-AM-Masons",
     base: "Canada",
     markets: ["North America", "Middle East", "Africa", "Asia"],
     copyright: "Copyright © 2026 AM MASONS ADVISORY, \"Canada-based. Advising across North America and beyond.\"",

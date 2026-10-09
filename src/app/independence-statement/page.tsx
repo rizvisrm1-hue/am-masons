@@ -46,9 +46,11 @@ export default function IndependenceStatement() {
             <p>
               By separating advisory from delivery, our clients maintain complete control over their delivery partners. When it is time to execute, you can select the brokers, designers, and vendors that best fit your specific needs, armed with a clear, objective brief and decision framework that we help you create.
             </p>
-            <p>
-              We advise. You choose. Delivery is never ours to keep.
-            </p>
+            <blockquote className="not-prose mt-12 border-l-4 border-primary pl-6 py-2">
+              <p className="!text-[22px] md:!text-[26px] !leading-snug font-semibold !text-gray-900">
+                We advise. You choose. Delivery is never ours to keep.
+              </p>
+            </blockquote>
           </div>
         </div>
       </section>

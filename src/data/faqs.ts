@@ -18,7 +18,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "How is this different from a broker, FM firm, or design firm?",
-    answer: "Brokers, facility managers, and designers each have specific downstream incentives—transaction, continuity, or project delivery. We don't lease, manage, or design, and we have no stake in the outcome, ensuring our advice remains entirely independent."
+    answer: "Brokers, facility managers, and designers each have specific downstream incentives: transaction, continuity, or project delivery. We don't lease, manage, or design, and we have no stake in the outcome, ensuring our advice remains entirely independent."
   },
   {
     question: "Do you provide design, brokerage, or implementation?",
@@ -30,7 +30,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "What happens on the first call?",
-    answer: "We ask questions about your portfolio size, actual attendance, and what's driving our conversation. There's no proposal or pitch deck—just an honest discussion to see if there's a fit."
+    answer: "We ask questions about your portfolio size, actual attendance, and what's driving our conversation. There's no proposal or pitch deck, just an honest discussion to see if there's a fit."
   },
   {
     question: "Why don't you publish pricing?",

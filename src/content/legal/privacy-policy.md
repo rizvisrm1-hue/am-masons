@@ -8,7 +8,7 @@ We may collect limited personal information when visitors:
 
 - Submit contact forms
 - Request conversations or information
-- Contact the firm via [email](mailto:rizvi@am-masons.com)
+- Contact the firm via [email](mailto:hello@am-masons.com)
 
 ### This Information May Include:
 

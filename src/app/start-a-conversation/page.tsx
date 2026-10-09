@@ -39,7 +39,7 @@ export default function StartConversation() {
               </Button>
               <span className="text-gray-400 font-medium">or</span>
               <a 
-                href={`mailto:${businessFacts.founder.email}`}
+                href={`mailto:${businessFacts.company.email}`}
                 className="text-navy-700 hover:text-navy-900 font-medium transition-colors"
               >
                 Email us directly

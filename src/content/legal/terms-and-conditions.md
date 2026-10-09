@@ -33,7 +33,7 @@ Content may be updated or changed at any time without notice.
 
 ## Intellectual Property
 
-All website content — including text, graphics, logos, and materials — is the property of AM Masons Advisory unless otherwise noted.
+All website content, including text, graphics, logos, and materials, is the property of AM Masons Advisory unless otherwise noted.
 
 Unauthorized use may violate copyright, trademark, and other applicable laws.
 

@@ -46,4 +46,4 @@ Technology use aligns with professional ethics, including:
 - Maintaining data privacy
 - Ensuring human accountability
 
-Technology is used to enhance — not replace — thoughtful professional advice.
+Technology is used to enhance, not replace, thoughtful professional advice.

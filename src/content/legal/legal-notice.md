@@ -34,4 +34,4 @@ This website is provided on an **“as-is”** basis. AM Masons Advisory does no
 
 For legal inquiries related to this website:
 
-**Email:** [rizvi@am-masons.com](mailto:rizvi@am-masons.com)
+**Email:** [hello@am-masons.com](mailto:hello@am-masons.com)

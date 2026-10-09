@@ -25,6 +25,7 @@ export const insights: Insight[] = [
     slug: "the-service-you-get-is-the-service-you-define",
     date: "8 Oct 2026",
     author: "Rashid Rizvi",
+    thumbnail: "/images/insights/service-you-define.webp",
     excerpt:
       "Why an IFM scorecard can be all green while the office was unusable, and why changing vendors often changes less...",
   },

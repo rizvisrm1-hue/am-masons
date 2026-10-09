@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { businessFacts } from "@/data/business";
 import PageHero from "@/components/ui/PageHero";
 import Button from "@/components/ui/Button";
+import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact | AM Masons Advisory",
@@ -87,27 +88,7 @@ export default function Contact() {
             <div className="slide-up" style={{ animationDelay: '0.1s' }}>
               <div className="bg-white p-8 rounded-2xl shadow-card-resting border border-gray-200/80">
                 <h3 className="text-[20px] font-bold text-gray-900 mb-6">Send us a message</h3>
-                <form className="space-y-5" action="https://formspree.io/f/xdeagljk" method="POST">
-                  <div>
-                    <label htmlFor="name" className="block text-[14px] font-medium text-gray-700 mb-1">Name</label>
-                    <input type="text" id="name" name="name" required className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900" />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-[14px] font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" id="email" name="email" required className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900" />
-                  </div>
-                  <div>
-                    <label htmlFor="company" className="block text-[14px] font-medium text-gray-700 mb-1">Company</label>
-                    <input type="text" id="company" name="company" className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900" />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-[14px] font-medium text-gray-700 mb-1">Message</label>
-                    <textarea id="message" name="message" rows={4} required className="w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900 resize-none"></textarea>
-                  </div>
-                  <div className="pt-2">
-                    <Button type="submit" className="w-full">Submit Message</Button>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
             </div>
             

@@ -1,5 +1,3 @@
-## Privacy Policy
-
 **Last Updated:** March 2026
 
 AM Masons Advisory respects your privacy and is committed to protecting personal information shared through this website.

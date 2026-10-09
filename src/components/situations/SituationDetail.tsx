@@ -44,7 +44,11 @@ export default function SituationDetail({ content }: { content: SituationContent
             <Eyebrow>What you leave with</Eyebrow>
             <h2 className="section-header">{outcomes.heading}</h2>
           </div>
-          <ol className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <ol
+            className={`grid sm:grid-cols-2 gap-5 ${
+              outcomes.items.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3"
+            }`}
+          >
             {outcomes.items.map((item, i) => (
               <li
                 key={item}

@@ -1,12 +1,16 @@
 "use client";
 
-import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
 import { formsConfig } from "@/data/forms";
 
+// The form posts straight to Formspree (a normal page submission, not a
+// background fetch). That keeps Formspree's own spam checks working, including
+// its reCAPTCHA page on free plans, which background submissions cannot pass.
+// After sending, Formspree shows its thank-you page with a link back.
+
 type TurnstileApi = {
   render: (el: HTMLElement, opts: Record<string, unknown>) => string;
-  reset: (id?: string) => void;
   remove: (id?: string) => void;
 };
 
@@ -41,21 +45,14 @@ function loadTurnstile(): Promise<TurnstileApi> {
 const inputClass =
   "w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900";
 
-type Status = "idle" | "sending" | "sent" | "error";
-
 export default function ContactForm() {
   const siteKey = formsConfig.turnstileSiteKey;
   const widgetRef = useRef<HTMLDivElement>(null);
   const widgetId = useRef<string | null>(null);
-  const [token, setToken] = useState<string>("");
+  const [token, setToken] = useState("");
   const [captchaError, setCaptchaError] = useState(false);
-  const [status, setStatus] = useState<Status>("idle");
+  const [sending, setSending] = useState(false);
   const [errorText, setErrorText] = useState("");
-
-  const resetCaptcha = useCallback(() => {
-    setToken("");
-    if (widgetId.current && window.turnstile) window.turnstile.reset(widgetId.current);
-  }, []);
 
   useEffect(() => {
     if (!siteKey || !widgetRef.current) return;
@@ -63,12 +60,15 @@ export default function ContactForm() {
     loadTurnstile()
       .then((ts) => {
         if (cancelled || !widgetRef.current || widgetId.current) return;
+        // The widget adds a hidden "cf-turnstile-response" field inside the
+        // form, which Formspree verifies against the secret key set in Formspree.
         widgetId.current = ts.render(widgetRef.current, {
           sitekey: siteKey,
           theme: "light",
           callback: (t: string) => {
             setToken(t);
             setCaptchaError(false);
+            setErrorText("");
           },
           "expired-callback": () => setToken(""),
           "error-callback": () => {
@@ -85,64 +85,23 @@ export default function ContactForm() {
     };
   }, [siteKey]);
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
-    // Honeypot: real people never see or fill this field.
-    if (String(data.get("_gotcha") ?? "").trim() !== "") {
-      setStatus("sent");
-      form.reset();
-      return;
-    }
-
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     if (siteKey && !token) {
-      setStatus("error");
+      e.preventDefault();
       setErrorText("Please complete the verification check before sending.");
       return;
     }
-    if (siteKey) data.set("cf-turnstile-response", token);
-
-    setStatus("sending");
-    setErrorText("");
-    try {
-      const res = await fetch(formsConfig.formspreeEndpoint, {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-      if (res.ok) {
-        setStatus("sent");
-        form.reset();
-        resetCaptcha();
-        return;
-      }
-      const body = await res.json().catch(() => null);
-      const msg =
-        body?.errors?.map((er: { message?: string }) => er.message).filter(Boolean).join(" ") ||
-        "Something went wrong. Please try again, or email us directly.";
-      setStatus("error");
-      setErrorText(msg);
-      resetCaptcha();
-    } catch {
-      setStatus("error");
-      setErrorText("Network error. Please try again, or email us directly.");
-      resetCaptcha();
-    }
-  }
-
-  if (status === "sent") {
-    return (
-      <div role="status" className="rounded-xl border border-primary/20 bg-primary-light p-6">
-        <p className="text-[18px] font-semibold !text-gray-900 mb-1">Thank you. Your message has been sent.</p>
-        <p>We will be in touch shortly.</p>
-      </div>
-    );
+    // Let the browser submit the form to Formspree normally.
+    setSending(true);
   }
 
   return (
-    <form className="space-y-5" onSubmit={handleSubmit} noValidate={false}>
+    <form
+      className="space-y-5"
+      action={formsConfig.formspreeEndpoint}
+      method="POST"
+      onSubmit={handleSubmit}
+    >
       <div>
         <label htmlFor="name" className="block text-[14px] font-medium text-gray-700 mb-1">Name</label>
         <input type="text" id="name" name="name" required autoComplete="name" className={inputClass} />
@@ -160,7 +119,10 @@ export default function ContactForm() {
         <textarea id="message" name="message" rows={4} required className={`${inputClass} resize-none`}></textarea>
       </div>
 
-      {/* Honeypot field: hidden from people, filled in by bots. Formspree also discards any submission that fills it. */}
+      {/* Subject line for the email Formspree sends you */}
+      <input type="hidden" name="_subject" value="New enquiry from am-masons.com" />
+
+      {/* Honeypot: hidden from people, filled in by bots. Formspree silently discards any submission that fills it. */}
       <div aria-hidden="true" className="absolute -left-[10000px] top-auto w-px h-px overflow-hidden">
         <label htmlFor="_gotcha">Leave this field empty</label>
         <input type="text" id="_gotcha" name="_gotcha" tabIndex={-1} autoComplete="off" />
@@ -177,13 +139,13 @@ export default function ContactForm() {
         </div>
       )}
 
-      {status === "error" && errorText && (
+      {errorText && (
         <p role="alert" className="text-[14px] !text-red-600">{errorText}</p>
       )}
 
       <div className="pt-2">
-        <Button type="submit" className={`w-full ${status === "sending" || (siteKey && !token) ? "opacity-60 pointer-events-none" : ""}`}>
-          {status === "sending" ? "Sending..." : "Submit Message"}
+        <Button type="submit" className={`w-full ${sending ? "opacity-60 pointer-events-none" : ""}`}>
+          {sending ? "Sending..." : "Submit Message"}
         </Button>
       </div>
     </form>

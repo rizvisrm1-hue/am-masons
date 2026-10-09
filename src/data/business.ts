@@ -9,6 +9,7 @@ export const businessFacts = {
     email: "rizvi@am-masons.com"
   },
   company: {
+    email: "hello@am-masons.com",
     linkedin: "https://www.linkedin.com/company/am-masons-advisory",
     bookingLink: "https://koalendar.com/e/meet-with-rashid-4",
     base: "Canada",

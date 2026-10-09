@@ -6,13 +6,17 @@ export default function PostCard({ post }: { post: Insight }) {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-card-resting hover:shadow-card-hover hover:-translate-y-[3px] transition-all duration-200 ease-out border border-gray-200/80 flex flex-col h-full group">
       <Link href={`/insights/${post.slug}`} className="block relative h-48 w-full bg-surface">
-        {post.thumbnail && (
+        {post.thumbnail ? (
           <Image 
             src={post.thumbnail} 
             alt={post.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 to-[#1f2a6b]">
+            <span className="text-[12px] font-semibold uppercase tracking-[0.2em] text-white/70">AM Masons Insights</span>
+          </div>
         )}
       </Link>
       <div className="p-6 md:p-8 flex flex-col flex-grow">

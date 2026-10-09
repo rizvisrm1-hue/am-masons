@@ -1,22 +1,42 @@
+// Insights list, matching am-masons.com/insights (newest first).
+// Each article's full text lives in src/content/insights/<slug>.md.
+// thumbnail is optional: posts without one show a branded placeholder.
+
 export type Insight = {
   id: string;
   title: string;
   slug: string;
   date: string;
   author: string;
-  thumbnail: string;
+  thumbnail?: string;
   excerpt: string;
 };
 
+export const insightsIntro = [
+  "Workplace and Corporate Real Estate decisions increasingly sit at the intersection of business strategy, employee experience, operational performance, cost, and risk.",
+  "The purpose of these insights is not simply to comment on industry trends, but to share practical perspectives drawn from real operating environments, where leadership intent, operational realities, and long-term outcomes must align.",
+  "Each article reflects how AM Masons Advisory approaches workplace decisions: deliberately, independently, and with a focus on clarity before execution.",
+];
+
 export const insights: Insight[] = [
+  {
+    id: "the-service-you-get-is-the-service-you-define",
+    title: "The Service You Get Is the Service You Define",
+    slug: "the-service-you-get-is-the-service-you-define",
+    date: "8 Oct 2026",
+    author: "Rashid Rizvi",
+    excerpt:
+      "Why an IFM scorecard can be all green while the office was unusable, and why changing vendors often changes less...",
+  },
   {
     id: "a-relocation-is-not-a-leasing-decision",
     title: "A Relocation Is Not a Leasing Decision",
     slug: "a-relocation-is-not-a-leasing-decision",
     date: "16 Sep 2026",
     author: "Rashid Rizvi",
-    thumbnail: "/images/insights/relocation.webp", // Placeholder name
-    excerpt: "When companies approach a relocation purely as a real estate transaction, they often miss the operational realities..."
+    thumbnail: "/images/insights/relocation.webp",
+    excerpt:
+      "By Rashid Masood Rizvi, Founder, AM Masons Advisory. 18 years leading global workplace and physical security portfolios at Procter &...",
   },
   {
     id: "the-case-for-a-fractional-real-estate",
@@ -25,7 +45,8 @@ export const insights: Insight[] = [
     date: "25 Aug 2026",
     author: "Rashid Rizvi",
     thumbnail: "/images/insights/fractional.webp",
-    excerpt: "Growing organizations frequently find themselves with a complex portfolio but without the dedicated senior leadership required to manage it..."
+    excerpt:
+      "Every growing company reaches the same inflection point. The office that once worked perfectly well, functional, unpretentious, managed loosely by...",
   },
   {
     id: "is-this-office-right-for-us",
@@ -34,7 +55,8 @@ export const insights: Insight[] = [
     date: "5 Aug 2026",
     author: "Rashid Rizvi",
     thumbnail: "/images/insights/office-right.webp",
-    excerpt: "Determining whether an office space aligns with your operational needs goes far beyond square footage and location..."
+    excerpt:
+      "I am often asked to walk through an office and give a view. I never turn it down. Floor plans...",
   },
   {
     id: "standardize-the-platform-localize-the-experience",
@@ -43,7 +65,8 @@ export const insights: Insight[] = [
     date: "15 Jul 2026",
     author: "Rashid Rizvi",
     thumbnail: "/images/insights/standardize.webp",
-    excerpt: "Balancing enterprise-wide consistency with local cultural nuances is the central challenge for any global workplace strategy..."
+    excerpt:
+      "I spent 18 years running global workplace services across 180 sites in 20 markets, and for most of that time...",
   },
   {
     id: "the-camera-was-offline-for-three-weeks",
@@ -52,15 +75,7 @@ export const insights: Insight[] = [
     date: "11 May 2026",
     author: "Rashid Rizvi",
     thumbnail: "/images/insights/camera-offline.webp",
-    excerpt: "Physical security systems often suffer from 'install and forget' syndrome, where critical failures go completely undetected until..."
+    excerpt:
+      "Physical security in most organisations sits quietly in the operations budget, usually owned by a Facilities team stretched across a...",
   },
-  {
-    id: "workplace-standards-dont-matter-until-cost-cutting",
-    title: "Workplace Standards Don't Matter Until Cost Cutting Turns Into Operational Risk",
-    slug: "workplace-standards-dont-matter-until-cost-cutting-turns-into-operational-risk",
-    date: "29 Apr 2026",
-    author: "Rashid Rizvi",
-    thumbnail: "/images/insights/workplace-standards.webp",
-    excerpt: "Without clearly defined operating standards, inevitable cost-reduction efforts can quickly erode the core functionality and safety of..."
-  }
 ];

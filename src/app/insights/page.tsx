@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { insights } from "@/data/insights";
+import { insights, insightsIntro } from "@/data/insights";
 import PageHero from "@/components/ui/PageHero";
 import PostCard from "@/components/cards/PostCard";
 import CTASection from "@/components/ui/CTASection";
@@ -18,10 +18,12 @@ export default function Insights() {
       />
 
       <section className="py-20 md:py-28 bg-gray-50 border-y border-gray-200">
-        <div className="container mx-auto px-4 max-w-4xl text-center slide-up">
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Decisions sit at the intersection of strategy, employee experience, operations, cost, and risk. Our articles share practical views from real operating environments; each reflects our deliberate, independent, and clarity-first approach.
-          </p>
+        <div className="container mx-auto px-4 max-w-3xl text-center slide-up space-y-5">
+          {insightsIntro.map((para) => (
+            <p key={para} className="!text-[18px] md:!text-[20px] !leading-relaxed text-gray-600">
+              {para}
+            </p>
+          ))}
         </div>
       </section>
 

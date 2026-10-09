@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { insights } from "@/data/insights";
 import CTASection from "@/components/ui/CTASection";
+import { getInsightHtml } from "@/lib/insightContent";
 
 type Props = {
   params: { slug: string };
@@ -34,6 +35,8 @@ export default function PostDetail({ params }: Props) {
     notFound();
   }
 
+  const html = getInsightHtml(post.slug);
+
   return (
     <>
       <article className="pt-24 pb-20 md:pt-32 md:pb-28 bg-white">
@@ -44,7 +47,7 @@ export default function PostDetail({ params }: Props) {
               <span className="mx-3 text-gray-300">|</span>
               <span>By {post.author}</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-navy-900 leading-tight mb-8">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-8">
               {post.title}
             </h1>
           </div>
@@ -61,19 +64,14 @@ export default function PostDetail({ params }: Props) {
             </div>
           )}
 
-          <div className="prose prose-lg max-w-none prose-headings:text-navy-900 prose-a:text-navy-700 hover:prose-a:text-navy-900 prose-img:rounded-xl">
-            <p className="lead text-xl text-gray-600 mb-8">
-              {post.excerpt}
-            </p>
-            
-            <div className="bg-gray-50 p-6 rounded-lg border border-dashed border-gray-300 text-center text-gray-500 italic my-12">
-              [Owner to supply final article text]
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+          {html ? (
+            <div
+              className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-gray-900"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          ) : (
+            <p className="text-xl text-gray-600">{post.excerpt}</p>
+          )}
         </div>
       </article>
 

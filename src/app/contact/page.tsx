@@ -52,10 +52,10 @@ export default function Contact() {
                     Email Us
                   </h3>
                   <a 
-                    href={`mailto:${businessFacts.founder.email}`} 
+                    href={`mailto:${businessFacts.company.email}`} 
                     className="text-lg text-navy-700 hover:text-navy-900 font-medium transition-colors"
                   >
-                    {businessFacts.founder.email}
+                    {businessFacts.company.email}
                   </a>
                 </div>
                 

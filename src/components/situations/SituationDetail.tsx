@@ -11,7 +11,7 @@ function Eyebrow({ children }: { children: string }) {
 }
 
 export default function SituationDetail({ content }: { content: SituationContent }) {
-  const { whenToEngage, outcomes, steps, tiers, independence, related, cta } = content;
+  const { whenToEngage, outcomes, steps, independence, related, cta } = content;
 
   return (
     <>
@@ -78,54 +78,6 @@ export default function SituationDetail({ content }: { content: SituationContent
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      {/* Tiers */}
-      <section className="py-20 md:py-28 bg-transparent">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="max-w-3xl mb-12 slide-up">
-            <Eyebrow>Engagement tiers</Eyebrow>
-            <h2 className="section-header">{tiers.heading}</h2>
-          </div>
-          <div className="grid lg:grid-cols-3 gap-6 items-stretch">
-            {tiers.items.map((tier) => (
-              <div
-                key={tier.name}
-                className={`relative flex flex-col p-7 rounded-2xl bg-card border ${
-                  tier.recommended
-                    ? "border-primary shadow-card-hover"
-                    : "border-gray-200/60 shadow-card-resting"
-                }`}
-              >
-                {tier.recommended && (
-                  <span className="absolute -top-3 left-7 px-3 py-1 rounded-full bg-primary text-white text-[11px] font-semibold uppercase tracking-[0.12em]">
-                    Recommended
-                  </span>
-                )}
-                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-primary mb-1">
-                  {tier.level}
-                </p>
-                <h3 className="text-[22px] font-bold text-gray-900 mb-3">{tier.name}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{tier.bestFor}</p>
-                <ul className="space-y-3 mb-6">
-                  {tier.includes.map((inc) => (
-                    <li key={inc} className="flex gap-3 text-gray-700">
-                      <svg className="w-5 h-5 shrink-0 text-primary mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>{inc}</span>
-                    </li>
-                  ))}
-                </ul>
-                {tier.notIncluded && (
-                  <p className="mt-auto pt-4 border-t border-gray-100 text-[14px] text-gray-500">
-                    <span className="font-semibold">Not included:</span> {tier.notIncluded}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

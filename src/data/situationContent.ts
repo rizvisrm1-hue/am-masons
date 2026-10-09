@@ -1,12 +1,3 @@
-export type SituationTier = {
-  level: string;
-  name: string;
-  bestFor: string;
-  includes: string[];
-  notIncluded?: string;
-  recommended?: boolean;
-};
-
 export type SituationContent = {
   intro: string;
   whenToEngage: {
@@ -21,10 +12,6 @@ export type SituationContent = {
   steps: {
     heading: string;
     items: { title: string; text: string }[];
-  };
-  tiers: {
-    heading: string;
-    items: SituationTier[];
   };
   independence: string;
   related: { title: string; text: string; href: string }[];
@@ -75,51 +62,6 @@ export const situationContent: Record<string, SituationContent> = {
         {
           title: "Direction Confirmation",
           text: "Recommendations are presented and confirmed with leadership before anyone sits down with the landlord.",
-        },
-      ],
-    },
-    tiers: {
-      heading: "Choose The Right Scope",
-      items: [
-        {
-          level: "Lite",
-          name: "Executive Read",
-          bestFor:
-            "Best for leadership wanting a fast, senior read on whether the current shortlist actually fits.",
-          includes: [
-            "Structured intake",
-            "Review of the current shortlist",
-            "Concise direction memo",
-            "Executive readout",
-          ],
-          notIncluded: "workshops, broad stakeholder engagement, or options modelling.",
-        },
-        {
-          level: "Standard",
-          name: "Pre-Lease Direction",
-          bestFor:
-            "Best for organizations with a lease event 18 to 36 months out and no agreed position yet.",
-          includes: [
-            "Executive and cross-functional interviews",
-            "Leadership alignment session",
-            "Location and footprint principles",
-            "Options with implications",
-            "Decision log documentation",
-          ],
-          recommended: true,
-        },
-        {
-          level: "Intensive",
-          name: "Multi-Site Lease Strategy",
-          bestFor:
-            "Best for portfolios negotiating several lease events at once, or politically complex environments.",
-          includes: [
-            "Expanded stakeholder engagement",
-            "Scenario-based options",
-            "Multiple working sessions",
-            "Enhanced decision documentation",
-            "Linkage to operating and security considerations",
-          ],
         },
       ],
     },

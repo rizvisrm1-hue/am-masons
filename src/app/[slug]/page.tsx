@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { situations } from "@/data/situations";
 import PageHero from "@/components/ui/PageHero";
 import CTASection from "@/components/ui/CTASection";
+import { situationContent } from "@/data/situationContent";
+import SituationDetail from "@/components/situations/SituationDetail";
 
 type Props = {
   params: { slug: string };
@@ -42,6 +44,21 @@ export function generateMetadata({ params }: Props): Metadata {
 
 export default function RootDynamicPage({ params }: Props) {
   const situation = situations.find((s) => s.slug === params.slug);
+
+  const content = situation ? situationContent[situation.slug] : undefined;
+
+  if (situation && content) {
+    return (
+      <>
+        <PageHero
+          eyebrow="We get involved..."
+          title={situation.title}
+          subtitle={content.intro}
+        />
+        <SituationDetail content={content} />
+      </>
+    );
+  }
 
   if (situation) {
     return (

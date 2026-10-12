@@ -26,7 +26,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "What is a fractional Head of Real Estate and Workplace Services?",
-    answer: "It provides you with senior leadership for a few days a month. This role acts as a decision owner, sets governance, and provides vendor oversight without the cost of a full-time executive."
+    answer: "A senior leader who takes ownership of your real estate and workplace function part-time, for a fixed term with clear start and end dates, never longer than 18 months, and an outcome agreed at the start. The role owns decisions, sets governance, and holds vendors to account, without the cost of a full-time executive. It is not a secondment: you get a decision owner accountable for results, not an extra pair of hands."
   },
   {
     question: "What happens on the first call?",

@@ -20,6 +20,16 @@ export const insightsIntro = [
 
 export const insights: Insight[] = [
   {
+    id: "you-cant-hand-over-what-you-dont-know",
+    title: "You Can't Hand Over What You Don't Know",
+    slug: "you-cant-hand-over-what-you-dont-know",
+    date: "13 Oct 2026",
+    author: "Rashid Rizvi",
+    thumbnail: "/images/insights/cant-hand-over.webp",
+    excerpt:
+      "Day three of a new facilities contract. 2am. A pipe lets go above the sixth floor. Why vendor transitions fail on day one, and how to sequence them...",
+  },
+  {
     id: "the-service-you-get-is-the-service-you-define",
     title: "The Service You Get Is the Service You Define",
     slug: "the-service-you-get-is-the-service-you-define",

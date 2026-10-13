@@ -11,7 +11,7 @@ export default function Home() {
     "@type": "ProfessionalService",
     "name": businessFacts.brandName,
     "image": "https://am-masons.com/images/hero/facilites.jpg",
-    "description": "Vendor-neutral advisory for organizations of 300 to 3,000 employees on real estate, workplace, standards, and physical security decisions.",
+    "description": "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
     "url": "https://am-masons.com",
     "address": {
       "@type": "PostalAddress",

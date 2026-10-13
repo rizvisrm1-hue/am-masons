@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { insights } from "@/data/insights";
 import CTASection from "@/components/ui/CTASection";
-import { getInsightHtml } from "@/lib/insightContent";
+import { getInsightHtml, getInsightFaqs, toIsoDate } from "@/lib/insightContent";
+
+const SITE = "https://am-masons.com";
 
 type Props = {
   params: { slug: string };
@@ -22,9 +24,33 @@ export function generateMetadata({ params }: Props): Metadata {
     return { title: "Post Not Found" };
   }
   
+  const title = post.metaTitle ?? `${post.title} | AM Masons Advisory`;
+  const description = post.metaDescription ?? post.excerpt;
+  const url = `/insights/${post.slug}`;
+  const images = post.thumbnail
+    ? [{ url: post.thumbnail, width: 1600, height: 900, alt: post.title }]
+    : undefined;
+
   return {
-    title: `${post.title} | AM Masons Advisory`,
-    description: post.excerpt,
+    title: { absolute: title },
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      url,
+      title: post.title,
+      description,
+      siteName: "AM Masons Advisory",
+      publishedTime: toIsoDate(post.date),
+      authors: ["Rashid Masood Rizvi"],
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: post.thumbnail ? [post.thumbnail] : undefined,
+    },
   };
 }
 
@@ -36,9 +62,57 @@ export default function PostDetail({ params }: Props) {
   }
 
   const html = getInsightHtml(post.slug);
+  const faqs = getInsightFaqs(post.slug);
+  const url = `${SITE}/insights/${post.slug}`;
+  const iso = toIsoDate(post.date);
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription ?? post.excerpt,
+    ...(iso ? { datePublished: iso, dateModified: iso } : {}),
+    ...(post.thumbnail ? { image: `${SITE}${post.thumbnail}` } : {}),
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: {
+      "@type": "Person",
+      name: "Rashid Masood Rizvi",
+      jobTitle: "Founder",
+      url: `${SITE}/about`,
+      worksFor: { "@type": "Organization", name: "AM Masons Advisory", url: SITE },
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "AM Masons Advisory",
+      url: SITE,
+      logo: { "@type": "ImageObject", url: `${SITE}/images/logo/logo-dark.png` },
+    },
+  };
+
+  const faqSchema = faqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : null;
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <article className="pt-24 pb-20 md:pt-32 md:pb-28 bg-white">
         <div className="container mx-auto px-4 max-w-3xl fade-in">
           <div className="mb-8 text-center">

@@ -106,7 +106,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     related: [
       { title: "Workplace Blueprint", text: "Translate direction into a plan your design team can execute.", href: "/offerings/workplace-blueprint" },
       { title: "Operating Standards & Governance", text: "Establish how workplace services operate consistently day-to-day.", href: "/offerings/operating-standards-governance-frameworks" },
-      { title: "Fractional Head of RE & Workplace", text: "Senior workplace leadership without a full-time executive role.", href: "/offerings/fractional-head-of-real-estate-workplace-services-2" },
+      { title: "Fractional Head of RE & Workplace", text: "Senior workplace leadership without a full-time executive role.", href: "/offerings/fractional-head-of-real-estate-workplace" },
     ],
     cta: {
       title: "Ready To Establish Direction?",
@@ -197,7 +197,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       "AM Masons Advisory focuses on governance structure, not operational outsourcing, staffing, or vendor delivery.",
     related: [
       { title: "Workplace Blueprint", text: "Translate leadership direction into an executable plan your design team can deliver.", href: "/offerings/workplace-blueprint" },
-      { title: "Fractional Head of Real Estate & Workplace Services", text: "Strategic leadership and oversight without full-time overhead.", href: "/offerings/fractional-head-of-real-estate-workplace-services-2" },
+      { title: "Fractional Head of Real Estate & Workplace Services", text: "Strategic leadership and oversight without full-time overhead.", href: "/offerings/fractional-head-of-real-estate-workplace" },
       { title: "Physical Security Strategy & Assurance", text: "Security governance aligned with workplace experience and risk.", href: "/offerings/physical-security-strategy-assurance" },
     ],
     cta: {
@@ -207,9 +207,9 @@ export const offeringContent: Record<string, OfferingContent> = {
   },
 
   // Same page as the "When Nobody Owns Real Estate & Workplace" situation on the old site.
-  "fractional-head-of-real-estate-workplace-services-2": {
+  "fractional-head-of-real-estate-workplace": {
     pageTitle: "Fractional Head of Real Estate & Workplace Services",
-    ...situationContent["fractional-head-of-real-estate-workplace-services-2"],
+    ...situationContent["fractional-head-of-real-estate-workplace"],
   },
 
   "physical-security-strategy-assurance": {
@@ -248,7 +248,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     related: [
       { title: "Workplace Direction & Alignment", text: "Establish leadership clarity before major workplace decisions.", href: "/offerings/workplace-direction-alignment" },
       { title: "Operating Standards & Governance Frameworks", text: "Build consistent and predictable workplace operations.", href: "/offerings/operating-standards-governance-frameworks" },
-      { title: "Fractional Head of Real Estate & Workplace Services", text: "Senior leadership without full-time commitment.", href: "/offerings/fractional-head-of-real-estate-workplace-services-2" },
+      { title: "Fractional Head of Real Estate & Workplace Services", text: "Senior leadership without full-time commitment.", href: "/offerings/fractional-head-of-real-estate-workplace" },
     ],
     cta: {
       title: "Ready To Strengthen Your Security Governance?",

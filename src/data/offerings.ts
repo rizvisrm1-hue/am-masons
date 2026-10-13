@@ -74,7 +74,7 @@ export const offerings: Offering[] = [
     id: "fractional-head",
     group: "Operations & Governance",
     title: "Fractional Head of Real Estate & Workplace Services",
-    slug: "fractional-head-of-real-estate-workplace-services-2",
+    slug: "fractional-head-of-real-estate-workplace",
     image: "/images/offerings/full-kitchen.jpg",
     description: "Provide senior workplace leadership and governance without the need for a full-time executive role. This engagement supports organizations requiring ongoing oversight, structured decision-making, and operational stability.",
     triggers: [

@@ -34,7 +34,7 @@ export const situations: Situation[] = [
     id: "fractional-head",
     title: "When Nobody Owns Real Estate & Workplace",
     gist: "Portfolio too complex for Finance/HR/Ops side-duty, not enough for a full-time exec",
-    slug: "fractional-head-of-real-estate-workplace-services-2"
+    slug: "fractional-head-of-real-estate-workplace"
   },
   {
     id: "physical-security",

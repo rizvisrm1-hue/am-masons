@@ -300,7 +300,7 @@ export const situationContent: Record<string, SituationContent> = {
       {
         title: "Fractional Head of Real Estate & Workplace Services",
         text: "Senior leadership, without the full-time role.",
-        href: "/offerings/fractional-head-of-real-estate-workplace-services-2",
+        href: "/offerings/fractional-head-of-real-estate-workplace",
       },
       {
         title: "Physical Security Strategy & Assurance",
@@ -314,7 +314,7 @@ export const situationContent: Record<string, SituationContent> = {
     },
   },
 
-  "fractional-head-of-real-estate-workplace-services-2": {
+  "fractional-head-of-real-estate-workplace": {
     intro: "Senior workplace leadership, without the full-time executive commitment.",
     whenToEngage: {
       heading: "Is This The Right Moment?",
@@ -443,7 +443,7 @@ export const situationContent: Record<string, SituationContent> = {
       {
         title: "Fractional Head of Real Estate & Workplace Services",
         text: "Senior leadership, without the full-time role.",
-        href: "/offerings/fractional-head-of-real-estate-workplace-services-2",
+        href: "/offerings/fractional-head-of-real-estate-workplace",
       },
     ],
     cta: {

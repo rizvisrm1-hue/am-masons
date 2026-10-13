@@ -13,7 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ].map((p) => ({ url: `${SITE}${p}`, changeFrequency: "monthly" as const, priority: p === "" ? 1 : 0.8 }));
 
   const offeringPages = offerings.map((o) => ({ url: `${SITE}/offerings/${o.slug}`, priority: 0.8 }));
-  const situationPages = situations.map((s) => ({ url: `${SITE}/${s.slug}`, priority: 0.7 }));
+  const offeringSlugs = new Set(offerings.map((o) => o.slug));
+  const situationPages = situations
+    .filter((s) => !offeringSlugs.has(s.slug))
+    .map((s) => ({ url: `${SITE}/${s.slug}`, priority: 0.7 }));
   const insightPages = insights.map((i) => ({
     url: `${SITE}/insights/${i.slug}`,
     lastModified: toIsoDate(i.date),

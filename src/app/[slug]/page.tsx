@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { situations } from "@/data/situations";
+import { offerings } from "@/data/offerings";
 import PageHero from "@/components/ui/PageHero";
 import CTASection from "@/components/ui/CTASection";
 import { situationContent } from "@/data/situationContent";
@@ -34,6 +35,9 @@ export function generateMetadata({ params }: Props): Metadata {
     return {
       title: `${situation.title} | AM Masons Advisory`,
       description: situation.gist,
+      ...(offerings.some((o) => o.slug === situation.slug)
+        ? { alternates: { canonical: `/offerings/${situation.slug}` } }
+        : {}),
     };
   }
 

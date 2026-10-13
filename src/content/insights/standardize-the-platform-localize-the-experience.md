@@ -1,4 +1,4 @@
-I spent 18 years running global workplace services across 180 sites in 20 markets, and for most of that time the mandate was standardization. Same standards, same programs, same playbook, everywhere. We executed it with real discipline too. This wasn’t a half-hearted corporate initiative that fizzled out. It worked, in the sense that the program did what it was designed to do.
+I spent 18 years running global workplace services, responsible for 180 sites and working across more than 20 markets. For most of that time the mandate was standardization. Same standards, same programs, same playbook, everywhere. We executed it with real discipline too. This wasn’t a half-hearted corporate initiative that fizzled out. It worked, in the sense that the program did what it was designed to do.
 
 Compliance was strong, the dashboards stayed green, however in a lot of our markets the experience quietly got worse. We were measuring inputs while the outcome eroded, and it took me longer than I’d like to admit to see it clearly.
 

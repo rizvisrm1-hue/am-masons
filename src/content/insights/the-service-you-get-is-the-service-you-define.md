@@ -104,4 +104,4 @@ They should include clear, agreed consequences, but not necessarily heavy penalt
 
 It depends on the cause. If the service is well defined and the delivery team is the problem, fixing the current relationship is often faster and cheaper. If the service was never clearly defined, changing vendors without fixing the definition will usually repeat the problem.
 
-_Rashid Masood Rizvi is the founder of AM Masons Advisory, an independent corporate real estate and workplace advisory firm. He spent 18 years leading global workplace services at a Fortune 50 company across 180 sites in 20 markets. AM Masons is vendor-agnostic and takes no vendor referral fees or commissions._
+_Rashid Masood Rizvi is the founder of AM Masons Advisory, an independent corporate real estate and workplace advisory firm. He spent 18 years leading global workplace services at a Fortune 50 company, where he was responsible for 180 sites and worked across more than 20 markets. AM Masons is vendor-agnostic and takes no vendor referral fees or commissions._

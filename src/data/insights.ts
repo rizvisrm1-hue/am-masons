@@ -67,7 +67,7 @@ export const insights: Insight[] = [
     author: "Rashid Rizvi",
     thumbnail: "/images/insights/standardize.webp",
     excerpt:
-      "I spent 18 years running global workplace services across 180 sites in 20 markets, and for most of that time...",
+      "I spent 18 years running global workplace services, responsible for 180 sites and working across more than 20 markets...",
   },
   {
     id: "the-camera-was-offline-for-three-weeks",

@@ -64,7 +64,7 @@ A Fractional Director does that. Not by being on-site every day, but by being co
 
 For a growing company navigating its first serious Real Estate decisions, that continuity of expertise, without the cost or commitment of a full-time senior hire, can be the difference between building a workplace function that supports the business and spending years fixing decisions that were made without the right guidance.
 
-I’ve run global workplace portfolios of over 180 sites across more than 20 markets. None of the mistakes above are hypothetical to me. I’ve watched good people with good intentions make every one of them, simply because nobody in the room had done this before at this scale.
+I’ve been responsible for over 180 sites and worked across more than 20 markets. None of the mistakes above are hypothetical to me. I’ve watched good people with good intentions make every one of them, simply because nobody in the room had done this before at this scale.
 
 The companies that get their workplace strategy right as they scale aren’t necessarily the ones with the biggest budgets. They’re the ones that found the right expertise at the right moment and kept them close.
 

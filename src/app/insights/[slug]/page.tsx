@@ -27,9 +27,9 @@ export function generateMetadata({ params }: Props): Metadata {
   const title = post.metaTitle ?? `${post.title} | AM Masons Advisory`;
   const description = post.metaDescription ?? post.excerpt;
   const url = `/insights/${post.slug}`;
-  const images = post.thumbnail
-    ? [{ url: post.thumbnail, width: 1600, height: 900, alt: post.title }]
-    : undefined;
+  // JPG copy for social previews: LinkedIn does not reliably render WebP.
+  const shareImage = post.thumbnail?.replace(/\.webp$/, ".jpg");
+  const images = shareImage ? [{ url: shareImage, alt: post.title }] : undefined;
 
   return {
     title: { absolute: title },
@@ -49,7 +49,7 @@ export function generateMetadata({ params }: Props): Metadata {
       card: "summary_large_image",
       title: post.title,
       description,
-      images: post.thumbnail ? [post.thumbnail] : undefined,
+      images: shareImage ? [shareImage] : undefined,
     },
   };
 }

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     title: "AM Masons Advisory | Independent Real Estate & Workplace Strategy",
     description: "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
     siteName: "AM Masons Advisory",
-    images: [{ url: "/images/hero/image-hero-amm.webp", width: 1200, height: 630, alt: "AM Masons Advisory" }],
+    images: [{ url: "/images/hero/og-default.jpg", alt: "AM Masons Advisory" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Masons Advisory",
     description: "Vendor-neutral advisory for real estate, workplace, standards, and physical security.",
-    images: ["/images/hero/image-hero-amm.webp"],
+    images: ["/images/hero/og-default.jpg"],
   },
 };
 

@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://am-masons.com",
     title: "AM Masons Advisory | Independent Real Estate & Workplace Strategy",
     description: "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
     siteName: "AM Masons Advisory",

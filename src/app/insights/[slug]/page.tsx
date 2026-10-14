@@ -5,7 +5,7 @@ import { insights } from "@/data/insights";
 import CTASection from "@/components/ui/CTASection";
 import { getInsightHtml, getInsightFaqs, toIsoDate } from "@/lib/insightContent";
 
-const SITE = "https://am-masons.com";
+const SITE = "https://www.am-masons.com";
 
 type Props = {
   params: { slug: string };

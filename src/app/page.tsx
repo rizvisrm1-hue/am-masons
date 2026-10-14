@@ -10,9 +10,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": businessFacts.brandName,
-    "image": "https://am-masons.com/images/hero/facilites.jpg",
+    "image": "https://www.am-masons.com/images/hero/facilites.jpg",
     "description": "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
-    "url": "https://am-masons.com",
+    "url": "https://www.am-masons.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "CA"

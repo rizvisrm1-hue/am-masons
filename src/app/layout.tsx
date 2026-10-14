@@ -7,7 +7,7 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://am-masons.com"),
+  metadataBase: new URL("https://www.am-masons.com"),
   title: "AM Masons Advisory | Independent Real Estate & Workplace Strategy",
   description: "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
   openGraph: {

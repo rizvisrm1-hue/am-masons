@@ -4,7 +4,7 @@ import { offerings } from "@/data/offerings";
 import { situations } from "@/data/situations";
 import { toIsoDate } from "@/lib/insightContent";
 
-const SITE = "https://am-masons.com";
+const SITE = "https://www.am-masons.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

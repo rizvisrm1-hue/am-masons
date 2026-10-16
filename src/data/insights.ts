@@ -22,6 +22,18 @@ export const insightsIntro = [
 
 export const insights: Insight[] = [
   {
+    id: "mandate-first-math-later",
+    title: "Mandate First, Math Later",
+    slug: "mandate-first-math-later",
+    metaTitle: "Mandate First, Math Later | Return to Office Space Planning",
+    metaDescription: "Why return to office mandates fail when space assessment and change management come after the announcement, and the sequence that gets RTO right.",
+    date: "19 Oct 2026",
+    author: "Rashid Rizvi",
+    thumbnail: "/images/insights/mandate-first.webp",
+    excerpt:
+      "Six years after offices emptied, return to office is still front-page news. That alone should tell us something about how mandates are being made...",
+  },
+  {
     id: "you-cant-hand-over-what-you-dont-know",
     title: "You Can't Hand Over What You Don't Know",
     slug: "you-cant-hand-over-what-you-dont-know",

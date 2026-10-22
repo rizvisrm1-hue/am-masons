@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact | AM Masons Advisory",
   description: "Get in touch with AM Masons Advisory to talk through your corporate real estate or workplace strategy challenge.",
 };

@@ -26,6 +26,7 @@ export function generateMetadata({ params }: Props): Metadata {
   return {
     title: `${offeringContent[offering.slug]?.pageTitle ?? offering.title} | AM Masons Advisory`,
     description: offering.description,
+    alternates: { canonical: `/offerings/${offering.slug}` },
   };
 }
 

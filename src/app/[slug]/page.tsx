@@ -35,14 +35,19 @@ export function generateMetadata({ params }: Props): Metadata {
     return {
       title: `${situation.title} | AM Masons Advisory`,
       description: situation.gist,
-      ...(offerings.some((o) => o.slug === situation.slug)
-        ? { alternates: { canonical: `/offerings/${situation.slug}` } }
-        : {}),
+      alternates: {
+        canonical: offerings.some((o) => o.slug === situation.slug)
+          ? `/offerings/${situation.slug}`
+          : `/${situation.slug}`,
+      },
     };
   }
 
   if (legalPages.includes(params.slug)) {
-    return { title: `${legalTitles[params.slug]} | AM Masons Advisory` };
+    return {
+      title: `${legalTitles[params.slug]} | AM Masons Advisory`,
+      alternates: { canonical: `/${params.slug}` },
+    };
   }
   
   return { title: "Not Found" };

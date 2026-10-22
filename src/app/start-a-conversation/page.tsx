@@ -4,6 +4,7 @@ import PageHero from "@/components/ui/PageHero";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/start-a-conversation" },
   title: "Start a Conversation | AM Masons Advisory",
   description: "Schedule a brief introductory call to discuss your corporate real estate or workplace strategy challenge.",
 };

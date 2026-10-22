@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { businessFacts } from "@/data/business";
 import { situations } from "@/data/situations";
 import Button from "@/components/ui/Button";
 import CTASection from "@/components/ui/CTASection";
 import SituationCard from "@/components/cards/SituationCard";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const jsonLd = {

@@ -3,6 +3,7 @@ import PageHero from "@/components/ui/PageHero";
 import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/independence-statement" },
   title: "Independence Statement | AM Masons Advisory",
   description: "Why independent, vendor-neutral advisory matters for corporate real estate and workplace decisions.",
 };

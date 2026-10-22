@@ -22,6 +22,18 @@ export const insightsIntro = [
 
 export const insights: Insight[] = [
   {
+    id: "your-lease-expires-in-24-months",
+    title: "Your Lease Expires in 24 Months. Your Leverage Expires Now.",
+    slug: "your-lease-expires-in-24-months",
+    metaTitle: "Your Lease Expires in 24 Months. Your Leverage Expires Now. | Office Lease Renewal Timing",
+    metaDescription: "Why waiting for the renewal letter costs tenants their leverage, how early to start by footprint size, and the Class A versus suburban trade-off in a tightening office market.",
+    date: "26 Oct 2026",
+    author: "Rashid Rizvi",
+    thumbnail: "/images/insights/lease-leverage.webp",
+    excerpt:
+      "Few companies know how their space is actually used. Even fewer know when their lease ends. In a tightening market, that gap is getting expensive...",
+  },
+  {
     id: "mandate-first-math-later",
     title: "Mandate First, Math Later",
     slug: "mandate-first-math-later",

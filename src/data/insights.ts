@@ -28,6 +28,7 @@ export const insights: Insight[] = [
     metaTitle: "Real Estate Accounting Explained | IFRS 16, ASPE and Your Leases",
     metaDescription: "How IFRS 16 changed the way leases look in the accounts, what it did to EBITDA, how ASPE and ASC 842 differ in Canada, and what the statements still miss.",
     date: "24 Nov 2026",
+    thumbnail: "/images/insights/real-estate-accounting.webp",
     author: "Rashid Rizvi",
     excerpt:
       "I enjoy almost everything about corporate real estate and workplace. The one part I have never enjoyed is the accounting...",

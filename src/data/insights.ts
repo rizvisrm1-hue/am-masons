@@ -22,6 +22,17 @@ export const insightsIntro = [
 
 export const insights: Insight[] = [
   {
+    id: "real-estate-accounting-explained",
+    title: "Real Estate Accounting, Explained by Someone Who Doesn't Enjoy It",
+    slug: "real-estate-accounting-explained",
+    metaTitle: "Real Estate Accounting Explained | IFRS 16, ASPE and Your Leases",
+    metaDescription: "How IFRS 16 changed the way leases look in the accounts, what it did to EBITDA, how ASPE and ASC 842 differ in Canada, and what the statements still miss.",
+    date: "24 Nov 2026",
+    author: "Rashid Rizvi",
+    excerpt:
+      "I enjoy almost everything about corporate real estate and workplace. The one part I have never enjoyed is the accounting...",
+  },
+  {
     id: "you-bought-the-company-you-also-bought-its-leases",
     title: "You Bought the Company. You Also Bought Its Leases.",
     slug: "you-bought-the-company-you-also-bought-its-leases",

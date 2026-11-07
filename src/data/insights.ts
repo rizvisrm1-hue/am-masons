@@ -28,6 +28,7 @@ export const insights: Insight[] = [
     metaTitle: "You Bought the Company. You Also Bought Its Leases. | Real Estate in M&A Integration",
     metaDescription: "Why lease portfolios get missed in M&A, the risk of integrating too slowly or too fast, and how a combined lease tracker drives the first 100 days.",
     date: "17 Nov 2026",
+    thumbnail: "/images/insights/inherited-leases.webp",
     author: "Rashid Rizvi",
     excerpt:
       "Deals are back. Each one was priced on what the target brings. The leases usually got a schedule. Rarely a plan...",

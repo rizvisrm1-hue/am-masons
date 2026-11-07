@@ -22,6 +22,17 @@ export const insightsIntro = [
 
 export const insights: Insight[] = [
   {
+    id: "you-bought-the-company-you-also-bought-its-leases",
+    title: "You Bought the Company. You Also Bought Its Leases.",
+    slug: "you-bought-the-company-you-also-bought-its-leases",
+    metaTitle: "You Bought the Company. You Also Bought Its Leases. | Real Estate in M&A Integration",
+    metaDescription: "Why lease portfolios get missed in M&A, the risk of integrating too slowly or too fast, and how a combined lease tracker drives the first 100 days.",
+    date: "17 Nov 2026",
+    author: "Rashid Rizvi",
+    excerpt:
+      "Deals are back. Each one was priced on what the target brings. The leases usually got a schedule. Rarely a plan...",
+  },
+  {
     id: "your-lease-expires-in-24-months",
     title: "Your Lease Expires in 24 Months. Your Leverage Expires Now.",
     slug: "your-lease-expires-in-24-months",

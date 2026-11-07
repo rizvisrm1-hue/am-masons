@@ -28,6 +28,7 @@ export const insights: Insight[] = [
     metaTitle: "You Cut the Headcount. You Kept the Floors. | Office Space After Layoffs",
     metaDescription: "Why surplus office space outlasts layoffs, the three ways out of a lease, and how designing core and ancillary space builds optionality before you sign.",
     date: "10 Nov 2026",
+    thumbnail: "/images/insights/kept-the-floors.webp",
     author: "Rashid Rizvi",
     excerpt:
       "Layoff announcements all read the same way: leaner teams, lower costs, sharper focus. Almost none of them mention the office...",

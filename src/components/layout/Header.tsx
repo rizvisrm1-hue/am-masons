@@ -13,7 +13,7 @@ export default function Header() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-gray-900/85 backdrop-blur-md border-gray-800 text-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full border-b bg-navy-900/90 backdrop-blur-md border-navy-800 text-white shadow-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -40,7 +40,7 @@ export default function Header() {
             <Link href="/offerings" className={`flex items-center text-[15px] font-medium hover:text-gray-300 transition-colors ${pathname.startsWith("/offerings") ? "text-gray-300" : ""}`}>
               Offerings ▾
             </Link>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-gray-900 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all border border-gray-200">
+            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-navy-900 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all border border-gray-200">
               <div className="py-2 flex flex-col">
                 {offerings.map((offering) => (
                   <Link key={offering.id} href={`/offerings/${offering.slug}`} className="px-4 py-2 text-sm hover:bg-gray-50 transition-colors">
@@ -78,7 +78,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-800 border-t border-gray-700">
+        <div className="md:hidden bg-navy-800 border-t border-navy-700">
           <div className="flex flex-col px-4 pt-2 pb-6 space-y-1">
             <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700">Home</Link>
             <Link href="/about" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700">About</Link>

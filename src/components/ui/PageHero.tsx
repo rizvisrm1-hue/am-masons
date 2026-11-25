@@ -10,7 +10,7 @@ type PageHeroProps = {
 
 export default function PageHero({ title, subtitle, eyebrow, backgroundImage }: PageHeroProps) {
   return (
-    <section className="relative bg-gray-900 text-white pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+    <section className="relative bg-navy-900 text-white pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
       {/* Background Image Overlay */}
       {backgroundImage && (
         <>
@@ -23,7 +23,7 @@ export default function PageHero({ title, subtitle, eyebrow, backgroundImage }: 
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-gray-900/70 z-10 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-navy-900/75 z-10 backdrop-blur-[2px]"></div>
         </>
       )}
       

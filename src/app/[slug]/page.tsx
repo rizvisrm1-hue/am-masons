@@ -94,7 +94,7 @@ export default function RootDynamicPage({ params }: Props) {
           <div className="container mx-auto px-4 max-w-3xl">
             {html ? (
               <div
-                className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-gray-900"
+                className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-navy-900"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             ) : null}

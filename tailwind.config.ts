@@ -10,15 +10,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#F4F5FD",
-        foreground: "#111827",
+        background: "#F7F6F3",
+        foreground: "#14213D",
         primary: {
           DEFAULT: '#3B4FE4',
           hover: '#2F3FBA',
           light: 'rgba(59, 79, 228, 0.1)',
           stroke: 'rgba(59, 79, 228, 0.08)',
         },
-        surface: "#F4F5FD",
+        navy: {
+          950: '#0B1426',
+          900: '#14213D',
+          800: '#1B2B4F',
+          700: '#24365F',
+          600: '#34477A',
+          500: '#55658C',
+          400: '#8391B3',
+          300: '#B7C0D6',
+        },
+        surface: "#F7F6F3",
         card: "#FFFFFF",
       },
       boxShadow: {

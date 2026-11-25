@@ -20,7 +20,7 @@ export default function OfferingCard({ offering }: { offering: Offering }) {
         <span className="text-[12px] font-semibold text-primary uppercase tracking-wider mb-3">
           {offering.group}
         </span>
-        <h3 className="text-[18px] md:text-[20px] font-semibold text-gray-900 leading-[1.35] mb-4 group-hover:text-primary transition-colors">
+        <h3 className="text-[18px] md:text-[20px] font-semibold text-navy-900 leading-[1.35] mb-4 group-hover:text-primary transition-colors">
           {offering.title}
         </h3>
         <p className="text-gray-600 mb-6 body-copy whitespace-pre-line">
@@ -28,7 +28,7 @@ export default function OfferingCard({ offering }: { offering: Offering }) {
         </p>
         
         <div className="mb-4 bg-surface/50 p-4 rounded-xl border border-primary-light/50">
-          <h4 className="text-[14px] font-semibold text-gray-900 mb-3">Typical Triggers</h4>
+          <h4 className="text-[14px] font-semibold text-navy-900 mb-3">Typical Triggers</h4>
           <ul className="text-[14px] text-gray-600 list-none space-y-2">
             {offering.triggers.map((trigger, i) => (
               <li key={i} className="flex items-start">
@@ -40,7 +40,7 @@ export default function OfferingCard({ offering }: { offering: Offering }) {
         </div>
 
         <div className="mb-8 flex-grow">
-          <h4 className="text-[14px] font-semibold text-gray-900 mb-2">Outcome</h4>
+          <h4 className="text-[14px] font-semibold text-navy-900 mb-2">Outcome</h4>
           <p className="!text-[14px] text-gray-600 leading-snug">{offering.outcome}</p>
         </div>
         

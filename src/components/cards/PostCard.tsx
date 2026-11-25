@@ -14,7 +14,7 @@ export default function PostCard({ post }: { post: Insight }) {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 to-[#1f2a6b]">
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-navy-900 to-[#1f2a6b]">
             <span className="text-[12px] font-semibold uppercase tracking-[0.2em] text-white/70">AM Masons Insights</span>
           </div>
         )}
@@ -27,7 +27,7 @@ export default function PostCard({ post }: { post: Insight }) {
         </div>
         
         <Link href={`/insights/${post.slug}`}>
-          <h3 className="text-[18px] md:text-[20px] font-semibold text-gray-900 leading-[1.35] mb-4 group-hover:text-primary transition-colors">
+          <h3 className="text-[18px] md:text-[20px] font-semibold text-navy-900 leading-[1.35] mb-4 group-hover:text-primary transition-colors">
             {post.title}
           </h3>
         </Link>

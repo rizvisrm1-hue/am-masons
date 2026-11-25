@@ -43,7 +43,7 @@ function loadTurnstile(): Promise<TurnstileApi> {
 }
 
 const inputClass =
-  "w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-gray-900";
+  "w-full px-4 py-3 bg-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors text-navy-900";
 
 export default function ContactForm() {
   const siteKey = formsConfig.turnstileSiteKey;

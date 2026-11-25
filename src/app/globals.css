@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #F4F5FD;
-  --foreground: #111827;
+  --background: #F7F6F3;
+  --foreground: #14213D;
 }
 
 body {
@@ -40,7 +40,7 @@ html {
 
 /* Base Typographic Styles based on Design System */
 .section-header {
-  color: #111827;
+  color: #14213D;
 }
 
 h2:not(.text-white), .section-header {
@@ -76,7 +76,7 @@ p, .body-copy {
 .prose h2 {
   font-size: clamp(24px, 3vw, 30px);
   line-height: 1.3;
-  color: #111827;
+  color: #14213D;
   margin-top: 2.5em;
   margin-bottom: 0.75em;
 }

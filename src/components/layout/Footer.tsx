@@ -4,7 +4,7 @@ import { businessFacts } from "@/data/business";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white border-t border-gray-800 mt-auto">
+    <footer className="bg-navy-900 text-white border-t border-navy-800 mt-auto">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
@@ -68,7 +68,7 @@ export default function Footer() {
       </div>
       
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 bg-gray-950 py-6">
+      <div className="border-t border-navy-800 bg-navy-950 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <p>{businessFacts.company.copyright}</p>
           <p className="mt-2 md:mt-0">Powered by AM MASONS ADVISORY</p>

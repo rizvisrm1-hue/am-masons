@@ -88,7 +88,7 @@ export default function StartConversation() {
             {/* Message form */}
             <div className="slide-up" style={{ animationDelay: "0.1s" }}>
               <div className="bg-white p-8 rounded-2xl shadow-card-resting border border-gray-200/80">
-                <h2 className="text-[20px] font-bold text-gray-900 mb-6">Prefer to write? Send a message</h2>
+                <h2 className="text-[20px] font-bold text-navy-900 mb-6">Prefer to write? Send a message</h2>
                 <ContactForm />
               </div>
             </div>

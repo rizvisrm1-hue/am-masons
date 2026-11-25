@@ -124,7 +124,7 @@ export default function PostDetail({ params }: Props) {
               <span className="mx-3 text-gray-300">|</span>
               <span>By {post.author}</span>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-8">
+            <h1 className="text-3xl md:text-5xl font-bold text-navy-900 leading-tight mb-8">
               {post.title}
             </h1>
           </div>
@@ -143,7 +143,7 @@ export default function PostDetail({ params }: Props) {
 
           {html ? (
             <div
-              className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-gray-900"
+              className="prose prose-lg max-w-none prose-a:text-primary prose-strong:text-navy-900"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           ) : (
@@ -164,7 +164,7 @@ export default function PostDetail({ params }: Props) {
                   href={r.href}
                   className="group p-7 rounded-2xl bg-white border border-gray-200/80 hover:border-primary hover:shadow-card-hover transition-all"
                 >
-                  <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-[20px] font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                     {r.title} <span aria-hidden="true">→</span>
                   </h3>
                   <p className="text-gray-600 leading-relaxed">{r.text}</p>

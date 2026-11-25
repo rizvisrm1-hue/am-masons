@@ -26,7 +26,7 @@ function CardGrid({ eyebrow, heading, cards }: { eyebrow: string; heading: strin
               href={r.href}
               className="group p-7 rounded-2xl bg-surface border border-gray-200/80 hover:border-primary hover:shadow-card-hover transition-all"
             >
-              <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+              <h3 className="text-[20px] font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                 {r.title} <span aria-hidden="true">→</span>
               </h3>
               <p className="text-gray-600 leading-relaxed">{r.text}</p>
@@ -121,7 +121,7 @@ export default function SituationDetail({ content, slug }: { content: SituationC
                 <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-gray-500 mb-2">
                   Step {String(i + 1).padStart(2, "0")}
                 </p>
-                <h3 className="text-[20px] font-bold text-gray-900 mb-3">{step.title}</h3>
+                <h3 className="text-[20px] font-bold text-navy-900 mb-3">{step.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{step.text}</p>
               </li>
             ))}
@@ -144,7 +144,7 @@ export default function SituationDetail({ content, slug }: { content: SituationC
                 </p>
               )}
               {included.name && (
-                <h3 className="text-[22px] font-bold text-gray-900 mb-3">{included.name}</h3>
+                <h3 className="text-[22px] font-bold text-navy-900 mb-3">{included.name}</h3>
               )}
               <p className="text-gray-600 leading-relaxed mb-6 max-w-3xl">{included.intro}</p>
               <ul className="grid md:grid-cols-2 gap-x-10 gap-y-3 mb-2">
@@ -167,7 +167,7 @@ export default function SituationDetail({ content, slug }: { content: SituationC
 
       {/* Independence */}
       {independence && (
-      <section className="py-16 md:py-20 bg-gray-900 text-white">
+      <section className="py-16 md:py-20 bg-navy-900 text-white">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-gray-400 mb-4">
             Independent by design
@@ -192,7 +192,7 @@ export default function SituationDetail({ content, slug }: { content: SituationC
                 href={r.href}
                 className="group p-7 rounded-2xl bg-surface border border-gray-200/80 hover:border-primary hover:shadow-card-hover transition-all"
               >
-                <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-[20px] font-bold text-navy-900 mb-3 group-hover:text-primary transition-colors">
                   {r.title} <span aria-hidden="true">→</span>
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{r.text}</p>

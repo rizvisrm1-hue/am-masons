@@ -17,7 +17,7 @@ export default function SituationCard({ situation, index }: { situation: Situati
           {index + 1}
         </div>
         <div className="flex-grow flex flex-col">
-          <h3 className="text-[18px] md:text-[20px] font-semibold text-gray-900 leading-[1.35] mb-3 group-hover:text-primary transition-colors">
+          <h3 className="text-[18px] md:text-[20px] font-semibold text-navy-900 leading-[1.35] mb-3 group-hover:text-primary transition-colors">
             {situation.title}
           </h3>
           <p className="text-gray-600 body-copy flex-grow">

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white pt-28 pb-32 md:pt-40 md:pb-48 overflow-hidden">
+      <section className="relative bg-navy-900 text-white pt-28 pb-32 md:pt-40 md:pb-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/hero/image-hero-amm.webp" 
@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         
         {/* Gradient Overlay for Readability */}
-        <div className="absolute inset-0 bg-gray-900/70 z-10 backdrop-blur-[2px]"></div>
+        <div className="absolute inset-0 bg-navy-900/75 z-10 backdrop-blur-[2px]"></div>
         
         <div className="container mx-auto px-4 relative z-20 fade-in">
           <div className="max-w-4xl mx-auto text-center">
@@ -46,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Credibility Line */}
-      <section className="bg-gray-800 text-gray-300 py-6 border-b border-gray-700">
+      <section className="bg-navy-800 text-gray-300 py-6 border-b border-navy-700">
         <div className="container mx-auto px-4 text-center text-sm md:text-base font-medium">
           Canada-based • Advises internationally • Built on 18 years of workplace & security leadership at Fortune 50 scale across 20+ countries
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-primary/10 z-10" />
-                <div className="absolute bottom-0 left-0 bg-white/80 backdrop-blur-md text-gray-900 p-6 md:p-8 z-20 max-w-md m-4 md:m-6 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] border border-white/40">
+                <div className="absolute bottom-0 left-0 bg-white/80 backdrop-blur-md text-navy-900 p-6 md:p-8 z-20 max-w-md m-4 md:m-6 rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] border border-white/40">
                   <h6 className="font-semibold text-[18px] mb-2">Advice, Not Delivery</h6>
                   <p className="body-copy text-gray-800">We advise. You choose. Delivery is never ours to keep.</p>
                 </div>
@@ -127,7 +127,7 @@ export default function Home() {
               </p>
               
               <div className="bg-background p-6 md:p-8 rounded-2xl border border-gray-200/80 mb-8 shadow-sm">
-                <h3 className="font-semibold text-[18px] text-gray-900 mb-5">Typical Client Traits:</h3>
+                <h3 className="font-semibold text-[18px] text-navy-900 mb-5">Typical Client Traits:</h3>
                 <ul className="space-y-4 body-copy">
                   <li className="flex items-start">
                     <span className="text-primary mr-3 mt-1 font-bold">•</span>

@@ -32,7 +32,7 @@ export default function FAQPage() {
       />
       
       <PageHero 
-        title="Frequently Asked Questions" 
+        title="Questions About Independent Workplace Advisory" 
         subtitle="Common questions about our independent advisory approach and how we work with clients." 
       />
 

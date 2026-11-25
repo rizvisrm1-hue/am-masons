@@ -14,7 +14,7 @@ export default function Insights() {
   return (
     <>
       <PageHero 
-        title="Insights" 
+        title="Workplace & Real Estate Insights" 
         subtitle="Perspectives on workplace, real estate, and physical security decisions." 
       />
 

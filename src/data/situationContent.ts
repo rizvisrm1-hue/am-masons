@@ -34,7 +34,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "By the time terms are being negotiated, or a portfolio move gets signed off, the location decision has usually already been made for you, by default, not by design.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Should You Get Independent Advice Before a Lease Decision?",
       text: "A lease decision looks like a real estate event. It is actually a decision about where the business will operate for years, made under a deadline nobody planned to think about seriously.",
       signals: [
         "A lease event, portfolio consolidation, expansion, or M&A-driven footprint change is 18 to 36 months out",
@@ -46,7 +46,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Should Be Settled Before You Sign or Change a Lease?",
       items: [
         "A clear, leadership-agreed position on what the space actually needs to do",
         "Independent testing of the assumptions behind the shortlist, before terms get negotiated",
@@ -56,7 +56,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does Independent Lease Decision Support Work?",
       items: [
         {
           title: "Intake & Context Setting",
@@ -105,7 +105,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "Nobody has measured whether the office is actually being used the way the lease, the headcount plan, or the budget assumes it is.",
     whenToEngage: {
-      heading: "Is This You?",
+      heading: "Is Your Office Used the Way Your Lease Assumes?",
       text: "Utilization gets debated in meetings. It rarely gets measured. That gap is where budget assumptions, renewal decisions, and headcount plans quietly drift from reality.",
       signals: [
         "Utilization feels off, but nobody has actually measured it",
@@ -117,7 +117,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Reveals",
+      heading: "What Does Measuring Real Space Usage Reveal?",
       items: [
         "An accurate picture of how the space is actually used, not how it was designed to be used",
         "Independent, vendor-agnostic data leadership can act on",
@@ -127,7 +127,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Is Real Office Space Usage Measured?",
       items: [
         {
           title: "Intake & Context Setting",
@@ -176,7 +176,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "The customer-facing floor, or the systems behind it, aren't performing, and no fixture or systems vendor is positioned to tell you why.",
     whenToEngage: {
-      heading: "Is This You?",
+      heading: "Is the Store Itself Holding Back Performance?",
       text: "Store performance gets attributed to the market, the format, or the team. Sometimes it is. Often it is the floor, the flow, or the systems behind the walls, and nobody independent has tested which.",
       signals: [
         "Store performance is inconsistent across a network that should behave more uniformly",
@@ -188,7 +188,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Reveals",
+      heading: "What Does an Independent Store Review Reveal?",
       items: [
         "An independent assessment of customer flow, back-of-house operations, and store systems",
         "Findings free of any fixture, design, or systems vendor's incentive",
@@ -198,7 +198,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does an Independent Retail Review Work?",
       items: [
         {
           title: "Intake & Context Setting",
@@ -247,7 +247,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "The workplace is built. Nobody owns consistent standards, accountability, or cost discipline across sites.",
     whenToEngage: {
-      heading: "Is This You?",
+      heading: "Are FM Services and Costs Drifting Across Your Sites?",
       text: "Every site made sense on its own at the time. Together, they add up to inconsistent FM services, standards, and costs nobody can fully explain, because nobody was ever accountable for the whole.",
       signals: [
         "Standards vary site to site, with nobody accountable for consistency",
@@ -259,7 +259,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Reveals",
+      heading: "What Does an FM Governance Review Reveal?",
       items: [
         "A governance framework that defines who owns what, and how performance is measured",
         "Independent oversight, fractional or advisory, without a full-time hire",
@@ -269,7 +269,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Do You Bring FM Standards and Costs Under Control?",
       items: [
         {
           title: "Intake & Context Setting",
@@ -317,7 +317,7 @@ export const situationContent: Record<string, SituationContent> = {
   "fractional-head-of-real-estate-workplace": {
     intro: "Senior workplace leadership, without the full-time executive commitment.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Does a Fractional Head of Real Estate Make Sense?",
       text: "Organizations engage when they need senior leadership in workplace and real estate but are not ready for a full-time hire.",
       signals: [
         "Growing organization without senior workplace leadership in place",
@@ -327,7 +327,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does a Fractional Head of Real Estate Deliver?",
       items: [
         "Structured decision-making and clear accountability",
         "Consistent governance and leadership oversight",
@@ -336,7 +336,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does a Fractional Real Estate Engagement Work?",
       items: [
         {
           title: "Governance Integration",
@@ -385,7 +385,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "Nobody outside the incumbent vendor has tested whether the physical security program is actually sound.",
     whenToEngage: {
-      heading: "Is This You?",
+      heading: "Has Anyone Independently Tested Your Security Program?",
       text: "Physical security programs are usually judged by the people who built them. That is not the same as an independent check, and the gap only shows up when something goes wrong.",
       signals: [
         "Physical security standards were set by the vendor delivering them",
@@ -397,7 +397,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Reveals",
+      heading: "What Does an Independent Security Review Reveal?",
       items: [
         "An independent, vendor-neutral assessment of physical security governance and standards",
         "Clear findings on where the program is sound and where it isn't",
@@ -407,7 +407,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does an Independent Security Check Work?",
       items: [
         {
           title: "Intake & Context Setting",
@@ -456,7 +456,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro:
       "You're preparing to sell workplace, real estate, facilities, or physical security products into a Fortune 500, and you don't know how they'll actually evaluate you.",
     whenToEngage: {
-      heading: "Is This You?",
+      heading: "Why Do Enterprise Deals Stall in Procurement?",
       text: "Enterprise buyers evaluate outside providers very differently from how they get pitched to. Most vendors learn the real process the hard way, mid-deal, after it has already stalled.",
       signals: [
         "You're a vendor or startup targeting enterprise or Fortune 500 accounts for the first time",
@@ -468,7 +468,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Reveals",
+      heading: "What Do Enterprise Buyers Actually Test Vendors For?",
       items: [
         "An insider's view of how enterprise workplace and real estate functions actually evaluate vendors",
         "What governance, procurement, and risk review will actually test for",
@@ -478,7 +478,7 @@ export const situationContent: Record<string, SituationContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Can Vendors Prepare for Enterprise Buyers?",
       items: [
         {
           title: "Intake & Context Setting",

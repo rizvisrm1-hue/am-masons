@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CTASection from "@/components/ui/CTASection";
 import type { SituationContent } from "@/data/situationContent";
+import { insightsForPage, situationForOffering, type LinkCard } from "@/data/linkMap";
 
 function Eyebrow({ children }: { children: string }) {
   return (
@@ -10,8 +11,37 @@ function Eyebrow({ children }: { children: string }) {
   );
 }
 
-export default function SituationDetail({ content }: { content: SituationContent }) {
+function CardGrid({ eyebrow, heading, cards }: { eyebrow: string; heading: string; cards: LinkCard[] }) {
+  return (
+    <section className="py-20 md:py-28 bg-white border-t border-gray-200/50">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="max-w-3xl mb-12">
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h2 className="section-header">{heading}</h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-5">
+          {cards.map((r) => (
+            <Link
+              key={r.href}
+              href={r.href}
+              className="group p-7 rounded-2xl bg-surface border border-gray-200/80 hover:border-primary hover:shadow-card-hover transition-all"
+            >
+              <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                {r.title} <span aria-hidden="true">→</span>
+              </h3>
+              <p className="text-gray-600 leading-relaxed">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function SituationDetail({ content, slug }: { content: SituationContent; slug: string }) {
   const { whenToEngage, outcomes, steps, included, independence, related, cta } = content;
+  const situation = situationForOffering(slug);
+  const reading = insightsForPage(slug);
 
   return (
     <>
@@ -22,6 +52,15 @@ export default function SituationDetail({ content }: { content: SituationContent
             <Eyebrow>{whenToEngage.eyebrow ?? "When to engage"}</Eyebrow>
             <h2 className="section-header mb-6">{whenToEngage.heading}</h2>
             <p className="subtitle">{whenToEngage.text}</p>
+            {situation && (
+              <p className="mt-6 text-gray-600">
+                Still diagnosing the problem? See{" "}
+                <Link href={situation.href} className="text-primary font-semibold hover:underline">
+                  {situation.title}
+                </Link>
+                .
+              </p>
+            )}
           </div>
           <ul className="space-y-4 slide-up" style={{ animationDelay: "0.1s" }}>
             {whenToEngage.signals.map((signal) => (
@@ -157,6 +196,10 @@ export default function SituationDetail({ content }: { content: SituationContent
           </div>
         </div>
       </section>
+      )}
+
+      {reading.length > 0 && (
+        <CardGrid eyebrow="Further reading" heading="Related Insights" cards={reading} />
       )}
 
       <CTASection title={cta.title} text={cta.text} buttonText="Start a Conversation" buttonHref="/start-a-conversation" />

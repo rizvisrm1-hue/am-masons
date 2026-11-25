@@ -70,7 +70,7 @@ export default function OfferingDetail({ params }: Props) {
         backgroundImage={offering.image}
       />
       {content ? (
-        <SituationDetail content={content} />
+        <SituationDetail content={content} slug={offering.slug} />
       ) : (
         <CTASection buttonText="Start a Conversation" buttonHref="/start-a-conversation" />
       )}

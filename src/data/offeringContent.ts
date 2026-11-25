@@ -11,7 +11,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Space Effectiveness Audit",
     intro: "Find out whether your office is working as hard as the lease you signed for it.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Should You Commission a Space Effectiveness Audit?",
       text: "Organizations engage when the office no longer matches how the business works, and a lease or budget decision is coming that will lock the mismatch in.",
       signals: [
         "Floors sit half empty on most days, and nobody has put a number on what that costs",
@@ -21,7 +21,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does a Space Effectiveness Audit Deliver?",
       items: [
         "A true utilization picture: how much of your space gets used, when, and by whom",
         "A functional fit assessment of where the design supports real work and where it works against it",
@@ -30,7 +30,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does a Space Effectiveness Audit Work?",
       items: [
         { title: "Scope", text: "We agree which sites, which questions, and how deep to go. Your situation sets the depth, not a package." },
         { title: "Gather", text: "Occupancy and badge data, floor plans, lease abstracts, and structured conversations with leaders and the people who use the space." },
@@ -71,7 +71,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Workplace Direction & Alignment",
     intro: "Establish leadership clarity before major workplace decisions are made.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Does Leadership Need Workplace Direction & Alignment?",
       text: "Organizations engage when workplace decisions have become strategic but direction remains unclear or contested.",
       signals: [
         "Lease renewal or relocation decision approaching",
@@ -83,7 +83,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does Workplace Direction & Alignment Deliver?",
       items: [
         "Clear leadership direction and intent",
         "Explicit trade-offs and decision criteria",
@@ -93,7 +93,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does Workplace Direction & Alignment Work?",
       items: [
         { title: "Intake & Context Setting", text: "We understand your business objectives, constraints, and current workplace challenges." },
         { title: "Interviews & Observation", text: "Structured discussions with key stakeholders to surface alignment and tensions." },
@@ -118,7 +118,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Workplace Blueprint",
     intro: "Translate leadership direction into an executable plan your design team can deliver.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Do You Need a Workplace Blueprint?",
       text: "Organizations engage when a workplace project is underway but direction, priorities, and trade-offs have not yet been clearly defined.",
       signals: [
         "Workplace redesign or relocation in planning",
@@ -129,7 +129,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does a Workplace Blueprint Deliver?",
       items: [
         "A workplace brief aligned with organizational objectives",
         "Defined space and experience priorities",
@@ -139,7 +139,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Is a Workplace Blueprint Built?",
       items: [
         { title: "Direction Review", text: "Confirm leadership intent and decision criteria before any design work progresses." },
         { title: "Workplace Requirements Definition", text: "Define space types, adjacencies, and experience priorities in detail." },
@@ -164,7 +164,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Operating Standards & Governance Frameworks",
     intro: "Consistent, predictable workplace operations, built to last.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Do You Need Workplace Operating Standards & Governance?",
       text: "Organizations engage when workplace operations have become inconsistent, reactive, or difficult to scale across locations.",
       signals: [
         "Inconsistent workplace experience across locations",
@@ -175,7 +175,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Do Operating Standards & Governance Deliver?",
       items: [
         "Clear service ownership and accountability",
         "Defined operating standards",
@@ -185,7 +185,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Are Operating Standards & Governance Set Up?",
       items: [
         { title: "Service Scope Assessment", text: "Review current services, ownership, and expectations." },
         { title: "Standards Definition", text: "Define service standards and operating expectations by location type." },
@@ -216,7 +216,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Physical Security Strategy & Assurance",
     intro: "Security governance aligned with workplace experience and operational risk.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Do You Need a Physical Security Strategy Review?",
       text: "Organizations engage when security standards are inconsistent, new risks are emerging, or better alignment is needed between security and workplace teams.",
       signals: [
         "Security standards evolving inconsistently across sites",
@@ -226,7 +226,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does Physical Security Strategy & Assurance Deliver?",
       items: [
         "Clear security governance and defined ownership",
         "Consistent standards across all locations",
@@ -235,7 +235,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does a Physical Security Assurance Review Work?",
       items: [
         { title: "Current State Review", text: "Assessment of existing policies, standards, and governance structure." },
         { title: "Risk & Standards Definition", text: "Standards defined and aligned to site types and risk posture." },
@@ -262,7 +262,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       "Prepare to sell into Fortune 500 organisations with intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence.",
     whenToEngage: {
       eyebrow: "Is this the right moment?",
-      heading: "Who Should Engage",
+      heading: "Who Needs Enterprise Readiness Advisory?",
       text: "Vendors and startups engage when they are preparing to approach enterprise clients and need to understand how decisions are actually made, not how they appear from the outside.",
       signals: [
         "First approach to a Fortune 500 or large enterprise prospect being planned",
@@ -273,7 +273,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does Enterprise Readiness Advisory Deliver?",
       items: [
         "A clear understanding of how enterprise buying decisions are structured internally",
         "Identification of what disqualifies vendors before formal evaluation begins",
@@ -283,7 +283,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does Enterprise Readiness Advisory Work?",
       items: [
         { title: "Intake & Context Setting", text: "We establish a clear picture of your product, your target market, and your current approach to enterprise clients." },
         { title: "The Inside View", text: "We work through how enterprise organisations actually make decisions: governance, authority, procurement, and what most vendors miss." },
@@ -314,7 +314,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     pageTitle: "Retail Space Effectiveness Audit",
     intro: "Find out whether your stores work for the customer on the floor and the systems behind the walls.",
     whenToEngage: {
-      heading: "Is This The Right Moment?",
+      heading: "When Should a Retailer Commission a Space Effectiveness Audit?",
       text: "Retailers engage when stores cost more to run than they should, perform unevenly across the network, or are about to be refit, replicated, or closed.",
       signals: [
         "A new format or refit is about to roll out across the network, and nobody has tested the current one",
@@ -324,7 +324,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     outcomes: {
-      heading: "What This Engagement Achieves",
+      heading: "What Does a Retail Space Effectiveness Audit Deliver?",
       items: [
         "A customer experience read: how people enter, move, find, try, pay, and leave",
         "A technical effectiveness review of lighting, climate control, network, power, and security infrastructure",
@@ -333,7 +333,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       ],
     },
     steps: {
-      heading: "How It Works",
+      heading: "How Does a Retail Space Effectiveness Audit Work?",
       items: [
         { title: "Scope", text: "We agree which stores, which formats, and which questions. Your network sets the depth, not a package." },
         { title: "Gather", text: "Store plans, sales and traffic data, maintenance and energy records, incident logs, and conversations with store leaders and teams." },

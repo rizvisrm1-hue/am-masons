@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <PageHero 
-        title="About" 
+        title="About AM Masons Advisory" 
         subtitle="Independent advice for workplace decisions that matter." 
       />
 
@@ -35,7 +35,7 @@ export default function About() {
               </div>
             </div>
             <div className="lg:w-1/2 slide-up">
-              <h2 className="section-header mb-6">AM Masons Advisory</h2>
+              <h2 className="section-header mb-6">What Is AM Masons Advisory?</h2>
               <div className="space-y-4 body-copy">
                 <p>
                   We are an independent advisory firm for organizations navigating complex workplace, real estate, and operational decisions.

@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { insights } from "@/data/insights";
 import CTASection from "@/components/ui/CTASection";
+import Link from "next/link";
+import { engagementsForInsight } from "@/data/linkMap";
 import { getInsightHtml, getInsightFaqs, toIsoDate } from "@/lib/insightContent";
 import { ORG_ID, ORG_NAME, FOUNDER_ID, FOUNDER_NAME } from "@/lib/schema";
 
@@ -66,6 +68,7 @@ export default function PostDetail({ params }: Props) {
   const faqs = getInsightFaqs(post.slug);
   const url = `${SITE}/insights/${post.slug}`;
   const iso = toIsoDate(post.date);
+  const engagements = engagementsForInsight(post.slug);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -148,6 +151,29 @@ export default function PostDetail({ params }: Props) {
           )}
         </div>
       </article>
+
+      {engagements.length > 0 && (
+        <section className="py-16 md:py-20 bg-surface border-t border-gray-200/50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <p className="text-[13px] font-semibold uppercase tracking-[0.14em] text-primary mb-3">Where this applies</p>
+            <h2 className="section-header mb-10">Related Engagements</h2>
+            <div className="grid md:grid-cols-3 gap-5">
+              {engagements.map((r) => (
+                <Link
+                  key={r.href}
+                  href={r.href}
+                  className="group p-7 rounded-2xl bg-white border border-gray-200/80 hover:border-primary hover:shadow-card-hover transition-all"
+                >
+                  <h3 className="text-[20px] font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                    {r.title} <span aria-hidden="true">→</span>
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">{r.text}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTASection />
     </>

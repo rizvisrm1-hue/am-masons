@@ -66,7 +66,7 @@ export default function RootDynamicPage({ params }: Props) {
           title={situation.title}
           subtitle={content.intro}
         />
-        <SituationDetail content={content} />
+        <SituationDetail slug={situation.slug} content={content} />
       </>
     );
   }

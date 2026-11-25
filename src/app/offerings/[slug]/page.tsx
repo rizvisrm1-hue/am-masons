@@ -26,7 +26,7 @@ export function generateMetadata({ params }: Props): Metadata {
   
   return {
     title: `${offeringContent[offering.slug]?.pageTitle ?? offering.title} | AM Masons Advisory`,
-    description: offering.description,
+    description: offering.metaDescription,
     alternates: { canonical: `/offerings/${offering.slug}` },
   };
 }
@@ -48,7 +48,7 @@ export default function OfferingDetail({ params }: Props) {
     name,
     serviceType: name,
     category: offering.group,
-    description: offering.description,
+    description: offering.metaDescription,
     url: `${SITE_URL}/offerings/${offering.slug}`,
     provider: { "@type": "ProfessionalService", "@id": ORG_ID, name: ORG_NAME },
     areaServed: ["North America", "Middle East", "Africa", "Asia"].map((n) => ({

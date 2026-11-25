@@ -24,7 +24,7 @@ I don’t think this happens because leadership is careless. It happens because 
 
 Procurement savings from standardization are precise, immediate, and easy to put on a slide. Experience erosion is diffuse and delayed, and it shows up in numbers nobody connects back to the workplace: attrition, disengagement, offices that slowly empty out. So in every budget argument, the measurable number beats the real one. I sat in those meetings. The side arguing for the spreadsheet always had better ammunition than the side arguing for something people could feel but nobody could prove.
 
-What happens next is the part I find most telling. When the erosion finally becomes undeniable, companies retreat, but watch which layer they retreat on. It’s always the cheapest one: visual identity. Local branding flexibility gets granted, the offices get some local color, and leadership declares the balance restored. The layer that actually determines experience, the services, never moves, because touching services would threaten the savings math that justified the whole program. Where service variation survived at all in my experience, it survived out of necessity. A transport program you simply couldn’t cut in a market where people had no safe way home. Nobody designed that. It just refused to die. Cosmetic flexibility isn’t localization. It’s an apology.
+What happens next is the part I find most telling. When the erosion finally becomes undeniable, companies retreat, but watch which layer they retreat on. It’s always the cheapest one: visual identity. Local branding flexibility gets granted, the offices get some local colour, and leadership declares the balance restored. The layer that actually determines experience, the services, never moves, because touching services would threaten the savings math that justified the whole program. Where service variation survived at all in my experience, it survived out of necessity. A transport program you simply couldn’t cut in a market where people had no safe way home. Nobody designed that. It just refused to die. Cosmetic flexibility isn’t localization. It’s an apology.
 
 ## The three-layer model
 
@@ -44,7 +44,7 @@ What the platform shouldn’t cover is anything cultural, anything aesthetic, an
 
 A small share of the budget makes the office belong to its city, and it buys far more emotion per dollar than almost anything else in the fit-out.
 
-Materials, art, color, the story the space tells about where it is. An office in Hyderabad shouldn’t feel like a photocopy of one in California. When it does, the message people receive, whether anyone intends it or not, is that their market is an outpost.
+Materials, art, colour, the story the space tells about where it is. An office in Hyderabad shouldn’t feel like a photocopy of one in California. When it does, the message people receive, whether anyone intends it or not, is that their market is an outpost.
 
 This is also the layer companies concede when standardization backfires, precisely because it’s cheap. It matters. It’s just not enough on its own. Identity without the next layer is decoration.
 
@@ -54,7 +54,7 @@ This is the layer most global programs never build, and it’s where the experie
 
 The brief to a site should never be “copy HQ.” The brief should be a question: what does this population lack that money can fix?
 
-Transport is one of the cleanest examples. Next to a metro station in a Western capital, a shuttle program adds almost nothing. In a developing city it can be a lifesaver, and I don’t mean that figuratively. It decides whether women on your team can work late, whether your office draws talent from across the city or just one neighborhood, and whether people stay. Same line item, opposite value.
+Transport is one of the cleanest examples. Next to a metro station in a Western capital, a shuttle program adds almost nothing. In a developing city it can be a lifesaver, and I don’t mean that figuratively. It decides whether women on your team can work late, whether your office draws talent from across the city or just one neighbourhood, and whether people stay. Same line item, opposite value.
 
 Food works the same way. Free meals are decisive in markets where there’s nothing decent to eat near the office, or commutes are brutal, or meals are simply a competitive hiring norm. In other markets the same program goes almost unnoticed. A barista bar is a genuine gathering point in one coffee culture and an expensive machine nobody touches in another.
 
@@ -74,7 +74,7 @@ Third, measure outcomes, not inputs. Dashboards that track compliance and vendor
 
 And I’d be careful about assuming surveys are the escape, because surveys get managed. Anyone who’s spent time in this function has seen it: the events that cluster suspiciously close to survey season, the showcase of the year’s work, the freebies and the pizza, and then the survey goes out while goodwill is warm. I don’t even think it’s dishonest, exactly. Make a team’s performance appraisal depend on an annual sentiment snapshot and they’ll optimize the snapshot. The score goes up, the experience hasn’t moved, and leadership ends up with something worse than no data, because now it’s confidently wrong.
 
-So weight what people do over what they say. Does the office win the commute in ordinary weeks, not event weeks? Do people stay? Do issues stay fixed after they’re closed, or do they reopen? Do people use the space for things they’re not required to attend? Behavior doesn’t fill out a survey to be polite.
+So weight what people do over what they say. Does the office win the commute in ordinary weeks, not event weeks? Do people stay? Do issues stay fixed after they’re closed, or do they reopen? Do people use the space for things they’re not required to attend? Behaviour doesn’t fill out a survey to be polite.
 
 ## The short version
 

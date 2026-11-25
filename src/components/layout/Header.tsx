@@ -54,7 +54,7 @@ export default function Header() {
           <Link href="/insights" className={`text-[15px] font-medium hover:text-gray-300 transition-colors ${isActive("/insights") ? "text-gray-300" : ""}`}>
             Insights
           </Link>
-          <Link href="/contact" className={`text-[15px] font-medium hover:text-gray-300 transition-colors ${isActive("/contact") ? "text-gray-300" : ""}`}>
+          <Link href="/start-a-conversation" className={`text-[15px] font-medium hover:text-gray-300 transition-colors ${isActive("/start-a-conversation") ? "text-gray-300" : ""}`}>
             Contact
           </Link>
         </nav>
@@ -93,7 +93,7 @@ export default function Header() {
               </div>
             </div>
             <Link href="/insights" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700">Insights</Link>
-            <Link href="/contact" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700">Contact</Link>
+            <Link href="/start-a-conversation" className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-navy-700">Contact</Link>
           </div>
         </div>
       )}

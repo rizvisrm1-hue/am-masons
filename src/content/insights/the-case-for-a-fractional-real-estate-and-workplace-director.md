@@ -1,6 +1,6 @@
 Every growing company reaches the same inflection point. The office that once worked perfectly well, functional, unpretentious, managed loosely by someone in HR or the admin team, suddenly isn’t keeping up. There are two locations now, maybe three. Lease renewals are appearing on the horizon. The fit-out that made sense two years ago feels wrong for the company you’re becoming. And the person who’s been managing it all alongside three other job responsibilities is quietly overwhelmed.
 
-A Fractional Real Estate and Workplace Director is the answer most companies at this stage don’t know exists. It’s a senior corporate real estate and workplace practitioner who embeds into your organisation on a part-time retainer, typically an agreed number of days a month, giving you the strategic ownership of a full-time director without the cost, and the continuity a project-based consultant can’t offer. Before I explain why that model works, it’s worth walking through why the two things most companies try first don’t.
+A Fractional Real Estate and Workplace Director is the answer most companies at this stage don’t know exists. It’s a senior corporate real estate and workplace practitioner who embeds into your organization on a part-time retainer, typically an agreed number of days a month, giving you the strategic ownership of a full-time director without the cost, and the continuity a project-based consultant can’t offer. Before I explain why that model works, it’s worth walking through why the two things most companies try first don’t.
 
 This is the moment when most companies make one of two mistakes.
 
@@ -18,13 +18,13 @@ You get someone enthusiastic but under-equipped, making strategy decisions witho
 
 You get the strategy right, but you lose them. A seasoned Real Estate Director with global portfolio experience isn’t going to stay long in a role that doesn’t challenge them, doesn’t offer growth, and doesn’t justify their seniority. They’ll be gone within eighteen months, taking their institutional knowledge with them and leaving you back at the beginning.
 
-And throughout all of this, the instinct to keep investment focused on revenue-generating functions means Workplace continues to be treated as a cost centre to be minimised rather than an asset to be managed. Which means the budget to hire the right person often isn’t there anyway.
+And throughout all of this, the instinct to keep investment focused on revenue-generating functions means Workplace continues to be treated as a cost centre to be minimized rather than an asset to be managed. Which means the budget to hire the right person often isn’t there anyway.
 
 ### Vendors Will Fill The Gap. But Not In Your Interest.
 
 In the absence of dedicated internal expertise, growing companies typically lean on their vendors. The outsourced FM provider. The property agent. The fit-out contractor. Each one is happy to step into the advisory vacuum, and each one is doing so with their own commercial interests intact.
 
-The property agent recommends the building that generates the best commission. The FM provider scopes the contract that maximises their revenue. The fit-out contractor designs the space that keeps their team busy. None of this is malicious. It is simply what happens when you ask people who are selling something to also tell you what you should buy.
+The property agent recommends the building that generates the best commission. The FM provider scopes the contract that maximizes their revenue. The fit-out contractor designs the space that keeps their team busy. None of this is malicious. It is simply what happens when you ask people who are selling something to also tell you what you should buy.
 
 The result is a workplace strategy assembled from the recommendations of vendors rather than built from a clear understanding of what the company actually needs. It can look coherent from the outside. It rarely holds together under pressure.
 
@@ -50,7 +50,7 @@ They are not a consultant who arrives, presents a report, and leaves. They are n
 
 The distinction matters. A consultant’s job ends when the engagement ends. A Fractional Director lives with the decisions. They are in the room when the lease is negotiated and still in the room twelve months later when the fit-out is being designed around that lease. They build institutional knowledge of your company, your culture, your growth trajectory, your leadership priorities, your vendor relationships, and they bring that context to every decision they support.
 
-Because they are vendor and solution agnostic, their recommendations are built around your outcomes, not a product they are trying to sell. And because they are operating across multiple client organisations, they bring current market intelligence, benchmarks, and best practice that an internal hire, focused solely on one portfolio, often cannot.
+Because they are vendor and solution agnostic, their recommendations are built around your outcomes, not a product they are trying to sell. And because they are operating across multiple client organizations, they bring current market intelligence, benchmarks, and best practice that an internal hire, focused solely on one portfolio, often cannot.
 
 ### What It Costs And How It’s Structured
 

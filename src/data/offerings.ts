@@ -5,6 +5,7 @@ export type Offering = {
   slug: string;
   image: string;
   description: string;
+  metaDescription: string;
   triggers: string[];
   outcome: string;
 };
@@ -15,6 +16,7 @@ export const offerings: Offering[] = [
     group: "Workplace & Real Estate",
     title: "Space Effectiveness Audit",
     slug: "space-effectiveness-audit",
+    metaDescription: "Independent audit of how your office is actually used and whether its design fits how teams work, before a lease renewal or budget decision locks it in.",
     image: "/images/offerings/space-effectiveness-audit-empty-office.jpg",
     description: "Find out whether your office is working as hard as the lease you signed for it. This engagement measures how your space is actually used and whether its design fits how your teams work, before a lease or budget decision locks the answer in.",
     triggers: [
@@ -30,6 +32,7 @@ export const offerings: Offering[] = [
     group: "Workplace & Real Estate",
     title: "Workplace Direction & Alignment",
     slug: "workplace-direction-alignment",
+    metaDescription: "Align Finance, HR and Operations on what your workplace must do before a lease, relocation or hybrid decision. Independent advice, no broker or design fees.",
     image: "/images/offerings/work-floor.jpg",
     description: "Establish leadership clarity before committing to workplace, real estate, or policy decisions. This engagement aligns leadership intent, defines key trade-offs, and produces clear directional guidance that prevents costly rework later in the process.",
     triggers: [
@@ -45,6 +48,7 @@ export const offerings: Offering[] = [
     group: "Workplace & Real Estate",
     title: "Workplace Blueprint",
     slug: "workplace-blueprint",
+    metaDescription: "Turn leadership direction into a workplace brief your designers can execute: space and experience priorities, trade-offs and design intent, agreed up front.",
     image: "/images/offerings/full-kitchen.jpg",
     description: "Translate leadership direction into an executable workplace plan. This engagement helps organizations make practical decisions around space priorities, employee experience, and design intent.\n\nThe result is a clear workplace brief that designers and project teams can execute efficiently and consistently.",
     triggers: [
@@ -60,6 +64,7 @@ export const offerings: Offering[] = [
     group: "Operations & Governance",
     title: "Operating Standards & Governance",
     slug: "operating-standards-governance-frameworks",
+    metaDescription: "Set one standard for FM services, vendor performance and cost across every site, with clear ownership and governance. Independent of any FM provider.",
     image: "/images/offerings/conf-room.jpg",
     description: "Define how workplace services operate on a day-to-day basis. This engagement establishes service standards, governance cadence, and accountability structures that sustain performance across locations and teams.",
     triggers: [
@@ -75,6 +80,7 @@ export const offerings: Offering[] = [
     group: "Operations & Governance",
     title: "Fractional Head of Real Estate & Workplace Services",
     slug: "fractional-head-of-real-estate-workplace",
+    metaDescription: "Senior real estate and workplace leadership for a fixed term of up to 18 months. Owns decisions, sets governance and oversees vendors. Not a secondment.",
     image: "/images/offerings/full-kitchen.jpg",
     description: "Provide senior workplace leadership and governance without the need for a full-time executive role. This engagement supports organizations requiring ongoing oversight, structured decision-making, and operational stability.",
     triggers: [
@@ -89,6 +95,7 @@ export const offerings: Offering[] = [
     group: "Risk & Assurance",
     title: "Physical Security Strategy & Assurance",
     slug: "physical-security-strategy-assurance",
+    metaDescription: "Independent review of access control, guarding, incident readiness and security governance across your sites, with no ties to hardware or guard vendors.",
     image: "/images/offerings/gallery-1.jpg",
     description: "Physical security requirements frequently evolve alongside workplace change. AM Masons Advisory provides independent advisory on security governance, standards, and design intent, ensuring security measures align with organizational risk posture while still supporting workplace experience.\n\nThis capability may be delivered as a standalone engagement or integrated into Workplace & Real Estate: Workplace Blueprint and Operating Standards workstreams.",
     triggers: [
@@ -104,8 +111,9 @@ export const offerings: Offering[] = [
     group: "Specialist Advisory",
     title: "Enterprise Readiness Advisory",
     slug: "enterprise-readiness-advisory",
+    metaDescription: "For vendors selling workplace, FM, real estate or security products to Fortune 500 buyers: learn how enterprises really evaluate and approve suppliers.",
     image: "/images/offerings/hero-bg-01.jpg",
-    description: "Prepare to sell into Fortune 500 organisations with strategic intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence. This engagement helps vendors and startups understand how enterprise organisations actually evaluate, select, and govern external providers, before they are in the room.",
+    description: "Prepare to sell into Fortune 500 organizations with strategic intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence. This engagement helps vendors and startups understand how enterprise organizations actually evaluate, select, and govern external providers, before they are in the room.",
     triggers: [
       "Preparing for a first approach to a Fortune 500 or large enterprise prospect",
       "Losing deals without understanding why",
@@ -119,6 +127,7 @@ export const offerings: Offering[] = [
     group: "Retail Workplace & Real Estate",
     title: "Retail Space Effectiveness Audit",
     slug: "retail-space-effectiveness-audit",
+    metaDescription: "Independent review of store layout, customer flow, back-of-house operations and store systems, before you commit capital to a refit or a new format.",
     image: "/images/offerings/retail-space-effectiveness-store-interior.jpg",
     description: "Find out whether your stores work for the customer on the floor and the systems behind the walls. This engagement reviews customer flow, back-of-house operations, and the technical infrastructure every store depends on, independent of any fixture, fit-out, or systems vendor.",
     triggers: [

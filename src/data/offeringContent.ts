@@ -12,7 +12,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Find out whether your office is working as hard as the lease you signed for it.",
     whenToEngage: {
       heading: "When Should You Commission a Space Effectiveness Audit?",
-      text: "Organizations engage when the office no longer matches how the business works, and a lease or budget decision is coming that will lock the mismatch in.",
+      text: "Commission one 18 to 36 months before a lease event, or as soon as attendance policy changes and the floor plan does not. The audit measures how your space is actually used and whether its design fits how teams work, so the decision to fix, hold or take it to leadership rests on evidence.",
       signals: [
         "Floors sit half empty on most days, and nobody has put a number on what that costs",
         "People come in on anchor days and still cannot find a room to focus or a table to work at together",
@@ -72,7 +72,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Establish leadership clarity before major workplace decisions are made.",
     whenToEngage: {
       heading: "When Does Leadership Need Workplace Direction & Alignment?",
-      text: "Organizations engage when workplace decisions have become strategic but direction remains unclear or contested.",
+      text: "When a lease, relocation, restructuring or hybrid decision is approaching and Finance, HR and Operations want different things. Workplace Direction & Alignment settles what the space must do, makes the trade-offs and decision criteria explicit, and documents leadership's position before any broker, architect or designer is briefed.",
       signals: [
         "Lease renewal or relocation decision approaching",
         "Hybrid or working model under review",
@@ -119,7 +119,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Translate leadership direction into an executable plan your design team can deliver.",
     whenToEngage: {
       heading: "When Do You Need a Workplace Blueprint?",
-      text: "Organizations engage when a workplace project is underway but direction, priorities, and trade-offs have not yet been clearly defined.",
+      text: "Once leadership direction is set, and before design work advances too far. A Workplace Blueprint turns that direction into a brief: space and experience priorities, documented trade-offs and clear design intent. Designers then execute against agreed requirements rather than competing stakeholder preferences, which is where rework and project risk usually start.",
       signals: [
         "Workplace redesign or relocation in planning",
         "Design team needs clearer direction before progressing",
@@ -165,7 +165,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Consistent, predictable workplace operations, built to last.",
     whenToEngage: {
       heading: "When Do You Need Workplace Operating Standards & Governance?",
-      text: "Organizations engage when workplace operations have become inconsistent, reactive, or difficult to scale across locations.",
+      text: "When service quality, vendor performance or cost varies from site to site and nobody can explain why. Operating Standards & Governance defines service ownership, operating standards, measurable service expectations and a governance cadence across every location, so operations run to one standard instead of reacting site by site as the portfolio grows.",
       signals: [
         "Inconsistent workplace experience across locations",
         "Unclear ownership or decision rights",
@@ -217,7 +217,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Security governance aligned with workplace experience and operational risk.",
     whenToEngage: {
       heading: "When Do You Need a Physical Security Strategy Review?",
-      text: "Organizations engage when security standards are inconsistent, new risks are emerging, or better alignment is needed between security and workplace teams.",
+      text: "When standards differ across sites, a relocation or expansion introduces new risk, or security and workplace teams work to different rules. The review assesses your program independently of any guard, integrator or hardware vendor, then sets clear ownership, consistent standards across locations and vendor-agnostic direction for what to fix first.",
       signals: [
         "Security standards evolving inconsistently across sites",
         "Growth or relocation introducing new risk considerations",
@@ -259,17 +259,17 @@ export const offeringContent: Record<string, OfferingContent> = {
   "enterprise-readiness-advisory": {
     pageTitle: "Enterprise Readiness Advisory",
     intro:
-      "Prepare to sell into Fortune 500 organisations with intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence.",
+      "Prepare to sell into Fortune 500 organizations with intelligence from someone who spent eighteen years on the inside making the decisions you are trying to influence.",
     whenToEngage: {
       eyebrow: "Is this the right moment?",
       heading: "Who Needs Enterprise Readiness Advisory?",
-      text: "Vendors and startups engage when they are preparing to approach enterprise clients and need to understand how decisions are actually made, not how they appear from the outside.",
+      text: "Vendors and startups selling workplace, real estate, facilities or physical security products to Fortune 500 buyers for the first time, or whose RFPs and deals stall without a clear reason. The advisory shows how those buyers actually evaluate and govern suppliers, from someone who spent 18 years on the buying side making those decisions.",
       signals: [
         "First approach to a Fortune 500 or large enterprise prospect being planned",
         "RFP responses stalling or failing without a clear reason",
         "Deals lost before reaching formal evaluation",
         "Entering the corporate real estate, workplace, FM, or physical security market for the first time",
-        "Internal team lacks experience selling into large, complex organisations",
+        "Internal team lacks experience selling into large, complex organizations",
       ],
     },
     outcomes: {
@@ -286,7 +286,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       heading: "How Does Enterprise Readiness Advisory Work?",
       items: [
         { title: "Intake & Context Setting", text: "We establish a clear picture of your product, your target market, and your current approach to enterprise clients." },
-        { title: "The Inside View", text: "We work through how enterprise organisations actually make decisions: governance, authority, procurement, and what most vendors miss." },
+        { title: "The Inside View", text: "We work through how enterprise organizations actually make decisions: governance, authority, procurement, and what most vendors miss." },
         { title: "Materials Review", text: "We examine your live pitch deck, proposal, or RFP response directly through the buyer’s lens." },
         { title: "Brief & Recommendations", text: "A written Enterprise Readiness Brief is delivered with specific, actionable recommendations." },
       ],
@@ -295,7 +295,7 @@ export const offeringContent: Record<string, OfferingContent> = {
       eyebrow: "The engagement",
       heading: "Enterprise Readiness Advisory",
       intro:
-        "For vendors and startups preparing to approach Fortune 500 and large enterprise organisations in the corporate real estate, workplace, facilities management, or physical security space.",
+        "For vendors and startups preparing to approach Fortune 500 and large enterprise organizations in the corporate real estate, workplace, facilities management, or physical security space.",
       items: [
         "Three structured advisory sessions",
         "Written Enterprise Readiness Brief delivered at close",
@@ -315,7 +315,7 @@ export const offeringContent: Record<string, OfferingContent> = {
     intro: "Find out whether your stores work for the customer on the floor and the systems behind the walls.",
     whenToEngage: {
       heading: "When Should a Retailer Commission a Space Effectiveness Audit?",
-      text: "Retailers engage when stores cost more to run than they should, perform unevenly across the network, or are about to be refit, replicated, or closed.",
+      text: "Before a new format or refit rolls out across the network, or when similar stores deliver very different results. The audit tests customer flow, layout, back-of-house operations and store systems such as lighting, climate, network and security, so capital fixes the cause instead of replicating the problem in every location.",
       signals: [
         "A new format or refit is about to roll out across the network, and nobody has tested the current one",
         "Similar stores deliver very different results, and nobody has measured whether layout is the cause",

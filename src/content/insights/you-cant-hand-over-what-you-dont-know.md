@@ -28,7 +28,7 @@ A company that does this before a transition finds the transition is mostly logi
 
 A vendor change sits between two companies with very different incentives. The outgoing vendor is winding down. Its best people are often being redeployed, and its attention is moving to the next contract. The incoming vendor wants to impress, but it hasn't seen the site and doesn't know what it doesn't know.
 
-So treat it as two plans. An offboarding plan for the vendor leaving, and an onboarding plan for the vendor arriving. Then run them as one programme, with one owner on your side.
+So treat it as two plans. An offboarding plan for the vendor leaving, and an onboarding plan for the vendor arriving. Then run them as one program, with one owner on your side.
 
 The most useful thing you can do is bring the incoming vendor into the offboarding. Have its site lead and key technicians walk the building with the outgoing team before they leave. Plant rooms, risers, roofs, the odd corners only one technician ever visits. Ask the outgoing team what breaks, what they keep an eye on, and what they'd warn their replacement about. The incoming team learns more in that week than in its first three months alone.
 
@@ -64,7 +64,7 @@ Then sign off. Once the outgoing team is gone, the chance to ask them anything g
 
 A vendor transition doesn't create gaps in your site knowledge. It reveals them.
 
-Own the record of your site, even if someone else runs it. Run offboarding and onboarding as one programme, with the incoming vendor in the room before the outgoing one leaves. Secure the critical elements first, because emergencies are not scheduled. Validate everything else rather than inheriting it. And sign off only when the work is actually done.
+Own the record of your site, even if someone else runs it. Run offboarding and onboarding as one program, with the incoming vendor in the room before the outgoing one leaves. Secure the critical elements first, because emergencies are not scheduled. Validate everything else rather than inheriting it. And sign off only when the work is actually done.
 
 If you're planning a facilities transition, I'm happy to walk you through how to sequence it for your site.
 
@@ -76,7 +76,7 @@ Updated emergency response and business continuity plans, working access for the
 
 **What is the difference between an offboarding plan and an onboarding plan?**
 
-An offboarding plan covers what the outgoing vendor must hand back and how its knowledge is captured before it leaves. An onboarding plan covers how the incoming vendor gets access, learns the site and takes over services. They work best run as a single programme with one owner on the client side.
+An offboarding plan covers what the outgoing vendor must hand back and how its knowledge is captured before it leaves. An onboarding plan covers how the incoming vendor gets access, learns the site and takes over services. They work best run as a single program with one owner on the client side.
 
 **Should the incoming vendor be involved before the contract starts?**
 

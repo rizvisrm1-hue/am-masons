@@ -8,7 +8,7 @@ const SITE = "https://www.am-masons.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
-    "", "/about", "/offerings", "/insights", "/faq", "/contact",
+    "", "/about", "/offerings", "/insights", "/faq",
     "/start-a-conversation", "/independence-statement",
   ].map((p) => ({ url: `${SITE}${p}`, changeFrequency: "monthly" as const, priority: p === "" ? 1 : 0.8 }));
 

@@ -15,6 +15,10 @@ const nextConfig = {
       { source: "/feed", destination: "/insights", permanent: true },
       { source: "/home/feed", destination: "/insights", permanent: true },
       { source: "/home", destination: "/", permanent: true },
+      // One conversion page: /contact merged into /start-a-conversation
+      { source: "/contact", destination: "/start-a-conversation", permanent: true },
+      // Situation copy of the Fractional offering: the offering page is the one page
+      { source: "/fractional-head-of-real-estate-workplace", destination: "/offerings/fractional-head-of-real-estate-workplace", permanent: true },
       // Legacy WordPress slug for the Fractional Head offering
       {
         source: "/offerings/fractional-head-of-real-estate-workplace-services-2",

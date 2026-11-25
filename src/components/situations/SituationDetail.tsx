@@ -41,9 +41,24 @@ function CardGrid({ eyebrow, heading, cards }: { eyebrow: string; heading: strin
 export default function SituationDetail({ content, slug }: { content: SituationContent; slug: string }) {
   const { whenToEngage, outcomes, steps, included, independence, related, cta } = content;
   const reading = insightsForPage(slug);
+  const qaSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: whenToEngage.heading,
+        acceptedAnswer: { "@type": "Answer", text: whenToEngage.text },
+      },
+    ],
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(qaSchema) }}
+      />
       {/* When to engage */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-12 lg:gap-20">

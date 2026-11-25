@@ -163,6 +163,6 @@ export const insights: Insight[] = [
     author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/camera-offline.webp",
     excerpt:
-      "Physical security in most organisations sits quietly in the operations budget, usually owned by a Facilities team stretched across a...",
+      "Physical security in most organizations sits quietly in the operations budget, usually owned by a Facilities team stretched across a...",
   },
 ];

@@ -48,7 +48,7 @@ export default function OfferingCard({ offering }: { offering: Offering }) {
           href={`/offerings/${offering.slug}`}
           className="inline-flex items-center text-primary font-semibold text-[14px] hover:text-primary-hover group/link mt-auto"
         >
-          Read more
+          Read more<span className="sr-only"> about {offering.title}</span>
           <svg className="w-4 h-4 ml-1.5 transition-transform group-hover/link:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

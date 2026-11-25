@@ -35,7 +35,7 @@ export const situationContent: Record<string, SituationContent> = {
       "By the time terms are being negotiated, or a portfolio move gets signed off, the location decision has usually already been made for you, by default, not by design.",
     whenToEngage: {
       heading: "When Should You Get Independent Advice Before a Lease Decision?",
-      text: "A lease decision looks like a real estate event. It is actually a decision about where the business will operate for years, made under a deadline nobody planned to think about seriously.",
+      text: "Get it 18 to 36 months before the lease event, before a shortlist is built. At that point you can still test headcount, hybrid policy and footprint assumptions, and go into negotiations with a position leadership has agreed. Wait until terms are on the table and the location decision has already been made for you, by default.",
       signals: [
         "A lease event, portfolio consolidation, expansion, or M&A-driven footprint change is 18 to 36 months out",
         "The current location was chosen for a business that has since changed",
@@ -106,7 +106,7 @@ export const situationContent: Record<string, SituationContent> = {
       "Nobody has measured whether the office is actually being used the way the lease, the headcount plan, or the budget assumes it is.",
     whenToEngage: {
       heading: "Is Your Office Used the Way Your Lease Assumes?",
-      text: "Utilization gets debated in meetings. It rarely gets measured. That gap is where budget assumptions, renewal decisions, and headcount plans quietly drift from reality.",
+      text: "In most organizations, nobody knows. Utilization gets debated in meetings and rarely measured. The office was sized for a headcount and work model that hybrid policy has since changed. Until someone measures real usage by floor, day and type of space, renewal, budget and headcount decisions rest on assumptions.",
       signals: [
         "Utilization feels off, but nobody has actually measured it",
         "The office was sized for a headcount or work model that has since changed",
@@ -177,7 +177,7 @@ export const situationContent: Record<string, SituationContent> = {
       "The customer-facing floor, or the systems behind it, aren't performing, and no fixture or systems vendor is positioned to tell you why.",
     whenToEngage: {
       heading: "Is the Store Itself Holding Back Performance?",
-      text: "Store performance gets attributed to the market, the format, or the team. Sometimes it is. Often it is the floor, the flow, or the systems behind the walls, and nobody independent has tested which.",
+      text: "Often, yes, and few retailers test it. Weak results get blamed on the market, the format or the team, while the cause sits in layout, customer flow, back-of-house operations or the systems behind the walls. An independent review separates the two before you commit capital to a refit or a new format.",
       signals: [
         "Store performance is inconsistent across a network that should behave more uniformly",
         "A format or refit program is being standardized across multiple locations",
@@ -248,12 +248,11 @@ export const situationContent: Record<string, SituationContent> = {
       "The workplace is built. Nobody owns consistent standards, accountability, or cost discipline across sites.",
     whenToEngage: {
       heading: "Are FM Services and Costs Drifting Across Your Sites?",
-      text: "Every site made sense on its own at the time. Together, they add up to inconsistent FM services, standards, and costs nobody can fully explain, because nobody was ever accountable for the whole.",
+      text: "If every site sets its own standards and manages its own vendors, yes. Each decision made sense locally. Together they produce uneven service, rising costs nobody can fully explain, and vendors grading their own performance. The drift stops when someone owns the whole portfolio and holds every site and supplier to one standard.",
       signals: [
         "Standards vary site to site, with nobody accountable for consistency",
         "Vendor relationships have grown without a governance framework behind them",
         "Facilities and real estate costs are rising and nobody can fully explain why",
-        "Leadership wants senior workplace oversight without adding a full-time executive role",
         "Decisions get made site by site, with no consistent framework behind them",
         "Nobody has tested whether current standards and spend match what leadership actually intends",
       ],
@@ -318,7 +317,7 @@ export const situationContent: Record<string, SituationContent> = {
     intro: "Senior workplace leadership, without the full-time executive commitment.",
     whenToEngage: {
       heading: "When Does a Fractional Head of Real Estate Make Sense?",
-      text: "Organizations engage when they need senior leadership in workplace and real estate but are not ready for a full-time hire.",
+      text: "When real estate and workplace decisions are too significant to run as a side duty for Finance, HR or Operations, but do not justify a permanent executive. The role is fixed term, never longer than 18 months, with an agreed outcome. It owns decisions, sets governance and oversees vendors. It is not a secondment.",
       signals: [
         "Growing organization without senior workplace leadership in place",
         "Organizational change or consolidation requiring oversight",
@@ -386,7 +385,7 @@ export const situationContent: Record<string, SituationContent> = {
       "Nobody outside the incumbent vendor has tested whether the physical security program is actually sound.",
     whenToEngage: {
       heading: "Has Anyone Independently Tested Your Security Program?",
-      text: "Physical security programs are usually judged by the people who built them. That is not the same as an independent check, and the gap only shows up when something goes wrong.",
+      text: "In most organizations, no. Security programs are usually judged by the integrator or guard company that built and runs them. An independent check tests access control, camera coverage, incident response and governance against your actual risk, with no hardware or guarding contract at stake, before a lapse or audit finding forces the question.",
       signals: [
         "Physical security standards were set by the vendor delivering them",
         "Nobody has independently reviewed access control, camera coverage, or incident response in years",
@@ -457,7 +456,7 @@ export const situationContent: Record<string, SituationContent> = {
       "You're preparing to sell workplace, real estate, facilities, or physical security products into a Fortune 500, and you don't know how they'll actually evaluate you.",
     whenToEngage: {
       heading: "Why Do Enterprise Deals Stall in Procurement?",
-      text: "Enterprise buyers evaluate outside providers very differently from how they get pitched to. Most vendors learn the real process the hard way, mid-deal, after it has already stalled.",
+      text: "Because enterprise buyers test what vendors rarely prepare for. Real estate, facilities and security teams assess governance, risk, operational fit and supplier accountability, not just the product. Vendors who pitch features to the wrong person stall in procurement or security review, usually mid-deal, and the buyer rarely tells them why.",
       signals: [
         "You're a vendor or startup targeting enterprise or Fortune 500 accounts for the first time",
         "You don't know who inside a large organization actually owns the buying decision",

@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { Situation } from "@/data/situations";
+import { offerings } from "@/data/offerings";
 
 export default function SituationCard({ situation, index }: { situation: Situation; index: number }) {
   return (
     <Link 
-      href={`/${situation.slug}`}
+      href={
+        offerings.some((o) => o.slug === situation.slug)
+          ? `/offerings/${situation.slug}`
+          : `/${situation.slug}`
+      }
       className="block p-6 md:p-8 bg-white border border-gray-200/80 rounded-2xl shadow-card-resting hover:shadow-card-hover hover:-translate-y-[3px] hover:border-primary-light transition-all duration-200 ease-out group h-full"
     >
       <div className="flex flex-col h-full">

@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/hero/image-hero-amm.webp" 
-            alt="Hero Background" 
+            alt="" 
             fill
             className="object-cover"
             priority
@@ -65,7 +65,7 @@ export default function Home() {
                   We offer vendor-agnostic guidance to define direction, make informed decisions, and build operating models that outlast projects. Our role is to help leadership choose well, not to sell solutions.
                 </p>
               </div>
-              <Button href="/independence-statement" variant="secondary">Learn More</Button>
+              <Button href="/independence-statement" variant="secondary">Read Our Independence Statement</Button>
             </div>
             <div className="lg:w-1/2 w-full">
               <div className="relative h-80 md:h-[450px] w-full rounded-2xl overflow-hidden shadow-card-resting bg-surface border border-gray-200/80">

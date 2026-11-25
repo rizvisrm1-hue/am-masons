@@ -46,7 +46,7 @@ export default function FAQPage() {
         title="Still have questions?"
         text="We're happy to discuss your specific situation. No pitch, just an honest conversation."
         buttonText="Get in Touch"
-        buttonHref="/contact"
+        buttonHref="/start-a-conversation"
       />
     </>
   );

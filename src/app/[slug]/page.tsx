@@ -20,10 +20,14 @@ const legalTitles: Record<string, string> = {
   "ai-use-policy": "AI Use Policy",
   "privacy-policy": "Privacy Policy",
 };
+const legalDescriptions: Record<string, string> = {"terms-and-conditions": "Terms and conditions governing use of the AM Masons Advisory website and its content, including intellectual property, liability and governing law.", "legal-notice": "Legal notice for AM Masons Advisory, an independent workplace, corporate real estate and physical security advisory firm based in Canada.", "disclaimer": "Disclaimer for the AM Masons Advisory website. All content is general information only and is not professional advice for your specific situation.", "ai-use-policy": "How AM Masons Advisory uses AI tools in research, writing and client work, and the human review and confidentiality standards that apply to that use.", "privacy-policy": "How AM Masons Advisory collects, uses and protects personal information on this website, including contact forms, meeting scheduling, cookies and analytics."};
 const legalPages = Object.keys(legalTitles);
 
 export function generateStaticParams() {
-  const situationParams = situations.map((s) => ({ slug: s.slug }));
+  const offeringSlugs = new Set(offerings.map((o) => o.slug));
+  const situationParams = situations
+    .filter((s) => !offeringSlugs.has(s.slug))
+    .map((s) => ({ slug: s.slug }));
   const legalParams = legalPages.map((slug) => ({ slug }));
   return [...situationParams, ...legalParams];
 }
@@ -34,7 +38,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (situation) {
     return {
       title: `${situation.title} | AM Masons Advisory`,
-      description: situation.gist,
+      description: situation.metaDescription ?? situation.gist,
       alternates: {
         canonical: offerings.some((o) => o.slug === situation.slug)
           ? `/offerings/${situation.slug}`
@@ -46,6 +50,7 @@ export function generateMetadata({ params }: Props): Metadata {
   if (legalPages.includes(params.slug)) {
     return {
       title: `${legalTitles[params.slug]} | AM Masons Advisory`,
+      description: legalDescriptions[params.slug],
       alternates: { canonical: `/${params.slug}` },
     };
   }

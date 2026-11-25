@@ -17,7 +17,7 @@ export default function PageHero({ title, subtitle, eyebrow, backgroundImage }: 
           <div className="absolute inset-0 z-0">
             <Image 
               src={backgroundImage} 
-              alt="Hero Background" 
+              alt="" 
               fill
               className="object-cover"
               priority

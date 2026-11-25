@@ -87,11 +87,21 @@ export default function About() {
 
       {/* Founder */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center slide-up">
+        <div className="container mx-auto px-4 max-w-5xl text-center slide-up">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">Led By: {businessFacts.founder.name}</h2>
           <p className="text-navy-500 font-semibold mb-8 uppercase tracking-wider">Founder</p>
-          
-          <div className="text-lg text-gray-600 space-y-6 text-left mb-10 bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
+
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10 mb-10">
+          <div className="relative w-56 h-72 md:w-64 md:h-80 shrink-0 rounded-2xl overflow-hidden shadow-card-resting border border-gray-200/80">
+            <Image
+              src="/images/hero/rashid-rizvi-headshot.jpg"
+              alt={`${businessFacts.founder.name}, Founder of AM Masons Advisory`}
+              fill
+              sizes="(max-width: 768px) 224px, 256px"
+              className="object-cover object-top"
+            />
+          </div>
+          <div className="flex-1 text-lg text-gray-600 space-y-6 text-left bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
             <p>
               Rashid left the Fortune 50 after 18 years leading workplace services and physical security (last role Global Director, overseeing 20+ countries) to advise from the outside on the same decisions:
             </p>
@@ -104,6 +114,7 @@ export default function About() {
             <p className="text-sm text-gray-500 pt-4 border-t border-gray-200">
               Credentials: {businessFacts.founder.credentials}
             </p>
+          </div>
           </div>
           
           <Button href={businessFacts.founder.linkedin} variant="secondary">

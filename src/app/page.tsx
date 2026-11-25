@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { situations } from "@/data/situations";
+import { businessFacts } from "@/data/business";
 import Button from "@/components/ui/Button";
 import CTASection from "@/components/ui/CTASection";
 import SituationCard from "@/components/cards/SituationCard";
@@ -150,6 +151,37 @@ export default function Home() {
               <p className="body-copy">
                 We also serve vendors, startups, and emerging firms preparing to sell into Fortune 500 and large enterprises, as well as retailers standardizing a format or refit program across stores.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder */}
+      <section className="py-20 md:py-28 bg-transparent">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-14 slide-up">
+            <div className="relative w-56 h-72 md:w-64 md:h-80 shrink-0 rounded-2xl overflow-hidden shadow-card-resting border border-gray-200/80">
+              <Image
+                src="/images/hero/rashid-rizvi-headshot.jpg"
+                alt={`${businessFacts.founder.name}, Founder of AM Masons Advisory`}
+                fill
+                sizes="(max-width: 768px) 224px, 256px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <p className="text-navy-500 font-semibold mb-3 uppercase tracking-wider text-sm">Who You Work With</p>
+              <h2 className="section-header mb-6">{businessFacts.founder.name}, Founder</h2>
+              <div className="space-y-4 body-copy mb-8">
+                <p>
+                  Rashid spent 18 years leading workplace services and physical security at a Fortune 50 company. His last role was Global Director, overseeing more than 20 countries.
+                </p>
+                <p>
+                  He now advises from the outside on the same decisions he once owned.
+                </p>
+                <p className="text-sm text-gray-500">Credentials: {businessFacts.founder.credentials}</p>
+              </div>
+              <Button href="/about" variant="secondary">Meet the Founder</Button>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { businessFacts } from "@/data/business";
 import { situations } from "@/data/situations";
 import Button from "@/components/ui/Button";
 import CTASection from "@/components/ui/CTASection";
@@ -11,30 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": businessFacts.brandName,
-    "image": "https://www.am-masons.com/images/hero/facilites.jpg",
-    "description": "Independent, vendor-neutral advisory on corporate real estate, workplace, operating standards and physical security decisions, before commitments are made.",
-    "url": "https://www.am-masons.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "CA"
-    },
-    "founder": {
-      "@type": "Person",
-      "name": businessFacts.founder.name
-    }
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white pt-28 pb-32 md:pt-40 md:pb-48 overflow-hidden">
         <div className="absolute inset-0 z-0">

@@ -1,6 +1,6 @@
 _What IFRS 16 changed, what it didn't, and what every CEO and CFO still needs to know about their leases_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 I enjoy almost everything about corporate real estate and workplace. Finding the right building. Designing space around how people actually work. Watching a team settle into an office that fits them.
 

@@ -1,6 +1,6 @@
 _Why the time to plan an office lease decision is long before the renewal letter arrives_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 I have sat across the table from a lot of leadership teams this year talking about their real estate. The same pattern keeps showing up. Few know how their space is actually being used. Even fewer know when their lease ends.
 

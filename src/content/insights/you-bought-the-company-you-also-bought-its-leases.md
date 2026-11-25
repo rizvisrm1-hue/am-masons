@@ -1,6 +1,6 @@
 _Why real estate belongs in the first 100 days of an integration, not the second year_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 Deals are back. In the first half of 2026, 708 Canadian companies were sold, more than in the same period last year. Each of those deals was priced on what the target brings: customers, product, talent, market share. The accounts were reviewed line by line.
 

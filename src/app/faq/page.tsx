@@ -6,7 +6,7 @@ import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/faq" },
-  title: "Frequently Asked Questions | AM Masons Advisory",
+  title: "Independent Workplace Advisory FAQ | AM Masons Advisory",
   description: "Answers to common questions about AM Masons Advisory, independent workplace and corporate real estate advice.",
 };
 

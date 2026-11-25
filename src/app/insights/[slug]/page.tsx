@@ -4,6 +4,7 @@ import Image from "next/image";
 import { insights } from "@/data/insights";
 import CTASection from "@/components/ui/CTASection";
 import { getInsightHtml, getInsightFaqs, toIsoDate } from "@/lib/insightContent";
+import { ORG_ID, ORG_NAME, FOUNDER_ID, FOUNDER_NAME } from "@/lib/schema";
 
 const SITE = "https://www.am-masons.com";
 
@@ -42,7 +43,7 @@ export function generateMetadata({ params }: Props): Metadata {
       description,
       siteName: "AM Masons Advisory",
       publishedTime: toIsoDate(post.date),
-      authors: ["Rashid Masood Rizvi"],
+      authors: [FOUNDER_NAME],
       images,
     },
     twitter: {
@@ -76,15 +77,14 @@ export default function PostDetail({ params }: Props) {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     author: {
       "@type": "Person",
-      name: "Rashid Masood Rizvi",
-      jobTitle: "Founder",
+      "@id": FOUNDER_ID,
+      name: FOUNDER_NAME,
       url: `${SITE}/about`,
-      worksFor: { "@type": "Organization", name: "AM Masons Advisory", url: SITE },
     },
     publisher: {
       "@type": "Organization",
-      name: "AM Masons Advisory",
-      url: SITE,
+      "@id": ORG_ID,
+      name: ORG_NAME,
       logo: { "@type": "ImageObject", url: `${SITE}/images/logo/logo-dark.png` },
     },
   };

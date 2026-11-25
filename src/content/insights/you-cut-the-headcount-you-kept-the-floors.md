@@ -1,6 +1,6 @@
 _Why the cheapest time to plan for change is before you move in_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 Last week, Canva cut 22% of its staff, 1,271 people. Microsoft has offered voluntary exits to around 60,000 employees. Through October, US employers announced more than 617,000 job cuts this year. About one in five cited AI; most of the rest pointed to slowing growth, market conditions and restructuring. The announcements all read the same way: leaner teams, lower costs, sharper focus.
 

@@ -29,7 +29,7 @@ export const insights: Insight[] = [
     metaDescription: "How IFRS 16 changed the way leases look in the accounts, what it did to EBITDA, how ASPE and ASC 842 differ in Canada, and what the statements still miss.",
     date: "24 Nov 2026",
     thumbnail: "/images/insights/real-estate-accounting.webp",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     excerpt:
       "I enjoy almost everything about corporate real estate and workplace. The one part I have never enjoyed is the accounting...",
   },
@@ -41,7 +41,7 @@ export const insights: Insight[] = [
     metaDescription: "Why lease portfolios get missed in M&A, the risk of integrating too slowly or too fast, and how a combined lease tracker drives the first 100 days.",
     date: "17 Nov 2026",
     thumbnail: "/images/insights/inherited-leases.webp",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     excerpt:
       "Deals are back. Each one was priced on what the target brings. The leases usually got a schedule. Rarely a plan...",
   },
@@ -53,7 +53,7 @@ export const insights: Insight[] = [
     metaDescription: "Why surplus office space outlasts layoffs, the three ways out of a lease, and how designing core and ancillary space builds optionality before you sign.",
     date: "10 Nov 2026",
     thumbnail: "/images/insights/kept-the-floors.webp",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     excerpt:
       "Layoff announcements all read the same way: leaner teams, lower costs, sharper focus. Almost none of them mention the office...",
   },
@@ -64,7 +64,7 @@ export const insights: Insight[] = [
     metaTitle: "Your Lease Expires in 24 Months. Your Leverage Expires Now. | Office Lease Renewal Timing",
     metaDescription: "Why waiting for the renewal letter costs tenants their leverage, how early to start by footprint size, and the Class A versus suburban trade-off in a tightening office market.",
     date: "26 Oct 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/lease-leverage.webp",
     excerpt:
       "Few companies know how their space is actually used. Even fewer know when their lease ends. In a tightening market, that gap is getting expensive...",
@@ -76,7 +76,7 @@ export const insights: Insight[] = [
     metaTitle: "Mandate First, Math Later | Return to Office Space Planning",
     metaDescription: "Why return to office mandates fail when space assessment and change management come after the announcement, and the sequence that gets RTO right.",
     date: "19 Oct 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/mandate-first.webp",
     excerpt:
       "Six years after offices emptied, return to office is still front-page news. That alone should tell us something about how mandates are being made...",
@@ -88,7 +88,7 @@ export const insights: Insight[] = [
     metaTitle: "You Can't Hand Over What You Don't Know | Facilities Vendor Transition Planning",
     metaDescription: "Why facilities vendor transitions fail on day one, and how to sequence offboarding, onboarding and validation so critical services never drop.",
     date: "13 Oct 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/cant-hand-over.webp",
     excerpt:
       "Day three of a new facilities contract. 2am. A pipe lets go above the sixth floor. Why vendor transitions fail on day one, and how to sequence them...",
@@ -100,7 +100,7 @@ export const insights: Insight[] = [
     metaTitle: "The Service You Get Is the Service You Define | Facilities SLAs and KPIs",
     metaDescription: "Why an IFM scorecard can be all green while the office is unusable, and how to define facilities SLAs, KPIs and escalation before you change vendors.",
     date: "8 Oct 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/service-you-define.webp",
     excerpt:
       "Why an IFM scorecard can be all green while the office was unusable, and why changing vendors often changes less...",
@@ -112,10 +112,10 @@ export const insights: Insight[] = [
     metaTitle: "A Relocation Is Not a Leasing Decision | Office Relocation Strategy",
     metaDescription: "How a growing company should sequence an office relocation: space need, floorplate fit, cost strategy and design brief before a lease is signed.",
     date: "16 Sep 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/relocation.webp",
     excerpt:
-      "By Rashid Masood Rizvi, Founder, AM Masons Advisory. 18 years leading global workplace and physical security portfolios at Procter &...",
+      "By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory. 18 years leading global workplace and physical security portfolios at Procter &...",
   },
   {
     id: "the-case-for-a-fractional-real-estate",
@@ -124,7 +124,7 @@ export const insights: Insight[] = [
     metaTitle: "The Case for a Fractional Real Estate and Workplace Director",
     metaDescription: "When a growing company outgrows ad hoc office management, a fractional real estate and workplace director brings senior expertise without a full-time hire.",
     date: "25 Aug 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/fractional.webp",
     excerpt:
       "Every growing company reaches the same inflection point. The office that once worked perfectly well, functional, unpretentious, managed loosely by...",
@@ -136,7 +136,7 @@ export const insights: Insight[] = [
     metaTitle: "Is This Office Right for Us? | Workplace Space Review",
     metaDescription: "What walking an office floor reveals that floor plans don't: empty collaboration areas, overbooked meeting rooms and space that no longer fits the work.",
     date: "5 Aug 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/office-right.webp",
     excerpt:
       "I am often asked to walk through an office and give a view. I never turn it down. Floor plans...",
@@ -148,7 +148,7 @@ export const insights: Insight[] = [
     metaTitle: "Standardize the Platform, Localize the Experience | Global Workplace Model",
     metaDescription: "Why pure workplace standardization erodes employee experience, and a three-layer model: standardize the platform, localize identity, flex services locally.",
     date: "15 Jul 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/standardize.webp",
     excerpt:
       "I spent 18 years running global workplace services, responsible for 180 sites and working across more than 20 markets...",
@@ -160,7 +160,7 @@ export const insights: Insight[] = [
     metaTitle: "The Camera Was Offline for Three Weeks and Nobody Noticed | Physical Security",
     metaDescription: "Physical security fails between disconnected vendors. Why CCTV, access control and monitoring need one owner accountable for the whole system.",
     date: "11 May 2026",
-    author: "Rashid Rizvi",
+    author: "Syed Rashid Masood Rizvi",
     thumbnail: "/images/insights/camera-offline.webp",
     excerpt:
       "Physical security in most organisations sits quietly in the operations budget, usually owned by a Facilities team stretched across a...",

@@ -1,6 +1,6 @@
 _Why facilities transitions fail on day one, and how to sequence them so nothing critical drops_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 Day three of a new facilities contract. 2am. A pipe lets go above the sixth floor.
 
@@ -94,4 +94,4 @@ Walk it. Check that each listed asset exists, is where the register says it is, 
 
 The client. The vendor can maintain the records day to day, but someone on the client side should own the asset register, critical plant list, SOPs, emergency plans and access records, and review them regularly.
 
-_Rashid Masood Rizvi is the founder of AM Masons Advisory, an independent corporate real estate and workplace advisory firm. He spent 18 years leading global workplace services at a Fortune 50 company, where he was responsible for 180 sites and worked across more than 20 markets. AM Masons is vendor-agnostic and takes no vendor referral fees or commissions._
+_Syed Rashid Masood Rizvi is the founder of AM Masons Advisory, an independent corporate real estate and workplace advisory firm. He spent 18 years leading global workplace services at a Fortune 50 company, where he was responsible for 180 sites and worked across more than 20 markets. AM Masons is vendor-agnostic and takes no vendor referral fees or commissions._

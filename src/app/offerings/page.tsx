@@ -6,7 +6,7 @@ import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offerings" },
-  title: "Offerings | AM Masons Advisory",
+  title: "Workplace & CRE Advisory Services | AM Masons Advisory",
   description: "Independent, vendor-neutral advisory services across real estate, workplace, standards, and physical security.",
 };
 

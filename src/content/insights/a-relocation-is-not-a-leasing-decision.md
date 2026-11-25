@@ -1,4 +1,4 @@
-_By Rashid Masood Rizvi, Founder, AM Masons Advisory. 18 years leading global workplace and physical security portfolios at Procter & Gamble across 20+ markets. MCR, PMP_
+_By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory. 18 years leading global workplace and physical security portfolios at Procter & Gamble across 20+ markets. MCR, PMP_
 
 Most companies treat a relocation as a leasing decision. Find the right amount of space, sign the lease, hire a designer, done. That order of operations is exactly how a growing company ends up with an office that quietly costs money and goodwill for years past the day the ribbon gets cut.
 

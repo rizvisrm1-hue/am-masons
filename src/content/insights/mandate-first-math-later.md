@@ -1,6 +1,6 @@
 _Why return to office mandates keep failing, and the order of operations that fixes them_
 
-By Rashid Masood Rizvi, Founder, AM Masons Advisory
+By Syed Rashid Masood Rizvi, Founder, AM Masons Advisory
 
 Six years after offices emptied, return to office is still front-page news. Unions are filing grievances. Mayoral candidates are campaigning on it. Employees are comparing notes on which floor still has a free desk by 9:30.
 

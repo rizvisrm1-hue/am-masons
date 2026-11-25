@@ -7,7 +7,7 @@ import CTASection from "@/components/ui/CTASection";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
-  title: "About | AM Masons Advisory",
+  title: "Syed Rashid Masood Rizvi, Founder | AM Masons Advisory",
   description: "Meet the founder and the independent, vendor-neutral approach behind AM Masons Advisory's corporate real estate and workplace advice.",
 };
 

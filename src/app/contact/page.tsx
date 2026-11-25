@@ -24,7 +24,7 @@ export default function Contact() {
       />
       
       <PageHero 
-        title="Contact AM Masons Advisory" 
+        title="Get in Touch" 
         subtitle="We'd love to hear from you! Get in touch." 
       />
 

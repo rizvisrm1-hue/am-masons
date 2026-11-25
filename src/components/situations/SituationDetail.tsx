@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CTASection from "@/components/ui/CTASection";
 import type { SituationContent } from "@/data/situationContent";
-import { insightsForPage, situationForOffering, type LinkCard } from "@/data/linkMap";
+import { insightsForPage, type LinkCard } from "@/data/linkMap";
 
 function Eyebrow({ children }: { children: string }) {
   return (
@@ -40,7 +40,6 @@ function CardGrid({ eyebrow, heading, cards }: { eyebrow: string; heading: strin
 
 export default function SituationDetail({ content, slug }: { content: SituationContent; slug: string }) {
   const { whenToEngage, outcomes, steps, included, independence, related, cta } = content;
-  const situation = situationForOffering(slug);
   const reading = insightsForPage(slug);
 
   return (
@@ -52,15 +51,6 @@ export default function SituationDetail({ content, slug }: { content: SituationC
             <Eyebrow>{whenToEngage.eyebrow ?? "When to engage"}</Eyebrow>
             <h2 className="section-header mb-6">{whenToEngage.heading}</h2>
             <p className="subtitle">{whenToEngage.text}</p>
-            {situation && (
-              <p className="mt-6 text-gray-600">
-                Still diagnosing the problem? See{" "}
-                <Link href={situation.href} className="text-primary font-semibold hover:underline">
-                  {situation.title}
-                </Link>
-                .
-              </p>
-            )}
           </div>
           <ul className="space-y-4 slide-up" style={{ animationDelay: "0.1s" }}>
             {whenToEngage.signals.map((signal) => (

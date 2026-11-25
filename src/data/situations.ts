@@ -3,6 +3,7 @@ export type Situation = {
   title: string;
   gist: string;
   metaDescription?: string;
+  metaTitle?: string;
   slug: string;
 };
 
@@ -33,6 +34,7 @@ export const situations: Situation[] = [
     title: "When FM Services, Standards & Costs Need Control",
     gist: "Services, standards, vendor performance, or costs drift across sites with no control model",
     metaDescription: "FM services, vendor performance and costs vary site to site and nobody owns the whole. Independent governance advice to bring standards and spend under control.",
+    metaTitle: "FM Cost and Standards Control | AM Masons Advisory",
     slug: "when-standards-and-costs-need-governance"
   },
   {
@@ -46,6 +48,7 @@ export const situations: Situation[] = [
     title: "When Physical Security Needs an Independent Check",
     gist: "Nobody outside the incumbent vendor has tested whether the security program is sound",
     metaDescription: "Nobody outside your incumbent guard or systems vendor has tested your security program. Get an independent check of controls, response and governance.",
+    metaTitle: "Independent Physical Security Review | AM Masons Advisory",
     slug: "when-physical-security-needs-an-independent-check"
   },
   {
@@ -53,6 +56,7 @@ export const situations: Situation[] = [
     title: "For Vendors: Before Selling Into an Enterprise Buyer",
     gist: "Vendors selling to enterprise workplace/CRE/FM/security buyers need to learn how large buyers evaluate suppliers",
     metaDescription: "Selling workplace, real estate, FM or security products to Fortune 500 buyers? Learn how they evaluate and govern suppliers before your next deal stalls.",
+    metaTitle: "Selling to Enterprise Buyers | AM Masons Advisory",
     slug: "before-selling-into-an-enterprise-buyer"
   }
 ];

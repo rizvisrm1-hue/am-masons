@@ -37,7 +37,7 @@ export function generateMetadata({ params }: Props): Metadata {
   
   if (situation) {
     return {
-      title: `${situation.title} | AM Masons Advisory`,
+      title: { absolute: situation.metaTitle ?? `${situation.title} | AM Masons Advisory` },
       description: situation.metaDescription ?? situation.gist,
       alternates: {
         canonical: offerings.some((o) => o.slug === situation.slug)

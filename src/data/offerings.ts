@@ -6,6 +6,7 @@ export type Offering = {
   image: string;
   description: string;
   metaDescription: string;
+  metaTitle?: string;
   triggers: string[];
   outcome: string;
 };
@@ -32,6 +33,7 @@ export const offerings: Offering[] = [
     group: "Workplace & Real Estate",
     title: "Workplace Direction & Alignment",
     slug: "workplace-direction-alignment",
+    metaTitle: "Workplace Strategy & Alignment | AM Masons Advisory",
     metaDescription: "Align Finance, HR and Operations on what your workplace must do before a lease, relocation or hybrid decision. Independent advice, no broker or design fees.",
     image: "/images/offerings/work-floor.jpg",
     description: "Establish leadership clarity before committing to workplace, real estate, or policy decisions. This engagement aligns leadership intent, defines key trade-offs, and produces clear directional guidance that prevents costly rework later in the process.",
@@ -64,6 +66,7 @@ export const offerings: Offering[] = [
     group: "Operations & Governance",
     title: "Operating Standards & Governance",
     slug: "operating-standards-governance-frameworks",
+    metaTitle: "FM Operating Standards & Governance | AM Masons Advisory",
     metaDescription: "Set one standard for FM services, vendor performance and cost across every site, with clear ownership and governance. Independent of any FM provider.",
     image: "/images/offerings/conf-room.jpg",
     description: "Define how workplace services operate on a day-to-day basis. This engagement establishes service standards, governance cadence, and accountability structures that sustain performance across locations and teams.",
@@ -80,6 +83,7 @@ export const offerings: Offering[] = [
     group: "Operations & Governance",
     title: "Fractional Head of Real Estate & Workplace Services",
     slug: "fractional-head-of-real-estate-workplace",
+    metaTitle: "Fractional Head of Real Estate & Workplace | AM Masons Advisory",
     metaDescription: "Senior real estate and workplace leadership for a fixed term of up to 18 months. Owns decisions, sets governance and oversees vendors. Not a secondment.",
     image: "/images/offerings/full-kitchen.jpg",
     description: "Provide senior workplace leadership and governance without the need for a full-time executive role. This engagement supports organizations requiring ongoing oversight, structured decision-making, and operational stability.",
